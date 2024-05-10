@@ -11,7 +11,7 @@ export default function Home() {
       </Header>
       
       <SubHeader>
-        SubHeader
+        SubHeader is a very nice type of tag!
       </SubHeader>
       <p>Olá mundooo</p>
     </main>

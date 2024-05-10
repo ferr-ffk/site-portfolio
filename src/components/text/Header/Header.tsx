@@ -9,7 +9,16 @@ interface Props {
 }
 
 const Header = ({ children }: Props) => {
-  return <h1 className={`${Varien.className} ${styles.container}`}>{children}</h1>;
+  let id: string = "";
+
+  // sets the id based on the text of the SubHeader
+  if (typeof children == "string") {
+    let text: string = children;
+
+    id = text.split(' ').join('-').toLowerCase();
+  }
+
+  return <h1 id={id} className={`${Varien.className} ${styles.container}`}>{children}</h1>;
 };
 
 export default Header;
