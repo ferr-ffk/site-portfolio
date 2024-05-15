@@ -1,0 +1,8 @@
+.container {
+    background-color: var(--moss-green);
+
+    color: var(--color-background);
+
+    border: none;
+    padding: .5rem 2.5rem;
+}
