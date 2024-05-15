@@ -1,7 +1,6 @@
-.logo {
-    font-size: 3rem;
-}
+.container {
+    position: relative;
 
-.header {
-    font-size: 4rem;
+    min-width: 25%;
+    min-height: 100%;
 }

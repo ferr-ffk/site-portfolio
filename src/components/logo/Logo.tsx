@@ -1,4 +1,6 @@
 import localFont from "next/font/local";
+import Image from "next/image";
+
 import NavbarLink from "../navbar/navbarLink/NavbarLink";
 
 import styles from "./Logo.module.css";
@@ -13,16 +15,8 @@ const Contour_Generator = localFont({
 
 const Logo = ({ header }: Props) => {
   return (
-    <div>
-      <NavbarLink href="/">
-        <p
-          className={`${Contour_Generator.className} ${styles.logo} ${
-            header ? styles.header : ""
-          }`}
-        >
-          fern
-        </p>
-      </NavbarLink>
+    <div className={styles.container}>
+      <Image src="/logo/logo_feh_fritas.png" alt="logo" fill objectFit="contain"/>
     </div>
   );
 };
