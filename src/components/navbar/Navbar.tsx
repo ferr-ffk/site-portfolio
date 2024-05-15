@@ -10,16 +10,16 @@ const Navbar = () => {
     <nav className={styles.container}>
       <Logo header />
       <ul className={styles.links}>
-        <li>
+        <li key="sobre">
           <NavbarLink href="#sobre">sobre</NavbarLink>
         </li>
-        <li>
+        <li key="projeto">
           <NavbarLink href="#projeto">projetos</NavbarLink>
         </li>
-        <li>
+        <li key="contato">
           <NavbarLink href="#contato">contato</NavbarLink>
         </li>
-        <li>
+        <li key="curriculo">
             <LinkButton href="\cv\curriculum-vitae.pdf" isPdf>Currículo</LinkButton>
         </li>
       </ul>
