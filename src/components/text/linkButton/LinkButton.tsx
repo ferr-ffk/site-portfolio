@@ -10,13 +10,22 @@ const oswald = Oswald({
 interface Props {
   children: React.ReactNode | React.ReactNode[];
   href: string;
+  isPdf?: boolean;
 }
 
-const LinkButton = ({ children, href }: Props) => {
+const LinkButton = ({ children, href, isPdf }: Props) => {
   const text = (children as string).toUpperCase();
 
+  const target = isPdf ? "_blank" : "";
+  const rel = isPdf ? "noopener noreferrer" : "";
+
   return (
-    <a href={href} className={`${styles.container} ${oswald.className}`}>
+    <a
+      href={href}
+      className={`${styles.container} ${oswald.className}`}
+      target={target}
+      rel={rel}
+    >
       {text}
     </a>
   );
