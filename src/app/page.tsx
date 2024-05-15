@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import SubHeader from "@/components/text/SubHeader/SubHeader";
-import Header from "@/components/text/Header/Header";
+import SubHeader from "@/components/text/subHeader/SubHeader";
+import Header from "@/components/text/header/Header";
 import Section from "@/components/division/section/Section";
 
 export default function Home() {
