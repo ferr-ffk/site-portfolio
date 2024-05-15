@@ -1,0 +1,30 @@
+.container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 2;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 5rem;
+
+    border: 1px solid red;
+    
+    font-size: 1.5rem;
+}
+
+.logo {
+    font-size: 3rem;
+}
+
+.links {
+    flex-grow: .25;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+}
