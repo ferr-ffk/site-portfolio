@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Vesper_Libre } from "next/font/google";
+import Navbar from "@/components/navbar/Navbar";
+import Footer from "@/components/footer/Footer";
 
-const vesperLibre = Vesper_Libre({ 
+const vesperLibre = Vesper_Libre({
   weight: "400",
-  subsets: ["latin"] 
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -19,7 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={vesperLibre.className}>{children}</body>
+      <body className={vesperLibre.className}>
+        <Navbar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
