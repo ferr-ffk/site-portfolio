@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css";
+
 import NavbarLink from "./navbarLink/NavbarLink";
 import LinkButton from "../text/linkButton/LinkButton";
 import Logo from "../logo/Logo";
