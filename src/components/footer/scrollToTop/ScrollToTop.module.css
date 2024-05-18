@@ -27,6 +27,8 @@
 
 @media (max-width: 1650px) {
     .container {
+        top: 92.5%;
+
         left: 40%;
         right: 40%;
     }
