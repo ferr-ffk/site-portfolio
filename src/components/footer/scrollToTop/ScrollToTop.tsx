@@ -33,15 +33,17 @@ const ScrollToTop = () => {
   window.addEventListener("scroll", toggleVisible);
 
   return (
-    <a
-      href="#"
-      className={styles.container}
-      id="scrollToTop"
-      title="Ir para o topo"
-      style={{ display: visible ? "inline" : "none" }}
-    >
-      <IoIosArrowUp />
-    </a>
+    <div className={styles.container}>
+      <a
+        href="#"
+        id="scrollToTop"
+        title="Ir para o topo"
+        style={{ visibility: visible ? "visible" : "hidden" }}
+        className={styles.link}
+      >
+        <IoIosArrowUp />
+      </a>
+    </div>
   );
 };
 

@@ -1,18 +1,33 @@
 .container {
-    --position-offset: 94%;
+    --position-offset: 95%;
 
     position: fixed;
-    z-index: 2;
 
     top: var(--position-offset);
     left: var(--position-offset);
+    font-size: 2rem;
+}
 
-    font-size: 1.5rem;
-
+.link {
     background-color: var(--color-text);
     color: var(--color-background);
+
+    width: max-content;
+
+    margin-inline: auto;
 
     padding: .125rem .625rem 0 .625rem;
 
     border-radius: .45rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 1650px) {
+    .container {
+        left: 40%;
+        right: 40%;
+    }
 }
