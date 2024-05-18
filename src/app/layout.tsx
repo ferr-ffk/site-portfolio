@@ -3,6 +3,7 @@ import "./globals.css";
 import { Vesper_Libre } from "next/font/google";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
+import ScrollToTop from "@/components/footer/scrollToTop/ScrollToTop";
 
 const vesperLibre = Vesper_Libre({
   weight: "400",
@@ -25,6 +26,7 @@ export default function RootLayout({
         <Navbar />
         {children}
         <Footer />
+        <ScrollToTop />
       </body>
     </html>
   );
