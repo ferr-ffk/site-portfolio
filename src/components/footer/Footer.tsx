@@ -40,7 +40,7 @@ const Footer = () => {
       <ul className={styles.links} id="links">
         {links.map((link) => (
           <li key={link.key}>
-            <a target="_blank" href={link.href}>
+            <a target="_blank" href={link.href} className={styles.link}>
               {link.icon}
             </a>
           </li>

@@ -20,6 +20,36 @@
     font-size: 2rem;
 }
 
+.link svg {
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.link:hover svg, .link:focus-within svg {
+    color: var(--color-primary);
+
+    animation: rotate .2s;
+
+    transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
 .logo {
     font-size: 3rem;
 }
