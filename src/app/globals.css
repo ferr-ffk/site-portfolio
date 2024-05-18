@@ -47,6 +47,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin-inline: auto;
   width: 1440px;
