@@ -1,6 +1,8 @@
 .container {
     display: flex;
     justify-content: space-between;
+
+    position: relative;
 }
 
 .links {
