@@ -3,9 +3,9 @@
     justify-content: space-between;
     align-items: center;
 
-    position: relative;
+    padding: 2rem 2rem;
 
-    padding: 0rem 2rem;
+    position: relative;
 }
 
 .links {
@@ -13,11 +13,18 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-grow: 0.25;
 }
 
 .links li {
     font-size: 2rem;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .link svg {
