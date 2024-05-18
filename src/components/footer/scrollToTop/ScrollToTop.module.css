@@ -1,0 +1,18 @@
+.container {
+    --position-offset: 90%;
+
+    position: fixed;
+    z-index: 2;
+
+    top: var(--position-offset);
+    left: var(--position-offset);
+
+    font-size: 1.5rem;
+
+    background-color: var(--color-text);
+    color: var(--color-background);
+
+    padding: .125rem .625rem 0 .625rem;
+
+    border-radius: .45rem;
+}
