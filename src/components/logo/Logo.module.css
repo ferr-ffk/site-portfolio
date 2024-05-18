@@ -5,4 +5,7 @@
     min-height: 100%;
 
     font-size: 4rem;
+
+    display: flex;
+    align-items: center;
 }
