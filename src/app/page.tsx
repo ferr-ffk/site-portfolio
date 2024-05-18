@@ -42,32 +42,20 @@ export default function Home() {
       </Section>
       <Section id="contato">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
-          reprehenderit ex sapiente ipsam amet voluptas commodi illum voluptatem
-          fugit, tempora a atque sequi saepe perspiciatis optio quod rerum
-          exercitationem eius maiores ullam? Voluptate quos optio sapiente.
-          Ratione aperiam enim ipsum eligendi accusantium voluptatibus
-          repellendus nobis? Nihil dolores nostrum sint dicta eos ex, voluptates
-          eveniet! Enim nulla, doloribus tempore ipsam ea veritatis pariatur
-          perferendis iste! Asperiores vero dolores dolor, distinctio nisi illo,
-          quibusdam quidem, dignissimos aspernatur ipsum necessitatibus neque
-          ducimus quam non possimus. Reprehenderit repellendus molestias impedit
-          placeat corporis. Aut unde facilis corrupti voluptas dolor at harum
-          iste nemo ea! Numquam!
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas
+          veritatis excepturi earum vero laborum quisquam eum quod quidem
+          doloremque, nesciunt qui nostrum ipsum? Enim voluptatum, quisquam nemo
+          cupiditate voluptates deleniti reiciendis a aspernatur nisi hic
+          pariatur omnis rem perferendis saepe adipisci cumque ab dignissimos
+          quo dolorem similique ea illum! Omnis?
         </p>
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto
-          repellendus beatae rerum quos maxime placeat perferendis adipisci,
-          quis expedita nulla ipsum corrupti enim excepturi omnis cum deleniti,
-          fuga nihil nisi voluptate officiis ea officia minima commodi!
-          Architecto magnam vitae cumque inventore et quia molestiae
-          necessitatibus distinctio. Id labore eum alias maiores nostrum! A
-          mollitia fugiat facere eum in tempora, dolorem adipisci inventore,
-          repellat pariatur alias repudiandae, blanditiis libero odio
-          voluptatem. Praesentium error quidem itaque dicta cum voluptate omnis
-          enim adipisci qui obcaecati? Quae laudantium quis animi dicta rem
-          numquam tenetur culpa, eum quo veniam fuga ullam iusto possimus.
-          Adipisci, dolorum!
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
+          facere voluptatem iste quam quaerat consequatur distinctio? Et facere
+          quos veritatis. Asperiores quia, qui enim itaque dolore nesciunt neque
+          distinctio laboriosam adipisci quam odio et voluptates, quisquam
+          molestias dolores fugiat harum inventore, corporis dolor libero.
+          Molestias alias pariatur assumenda laborum iste?
         </p>
       </Section>
     </main>
