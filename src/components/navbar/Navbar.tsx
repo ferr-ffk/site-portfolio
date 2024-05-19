@@ -8,7 +8,7 @@ import Logo from "../logo/Logo";
 const Navbar = () => {
   return (
     <nav className={styles.container}>
-      <Logo header />
+      <Logo />
       <ul className={styles.links}>
         <li key="sobre">
           <NavbarLink href="#sobre">sobre</NavbarLink>
