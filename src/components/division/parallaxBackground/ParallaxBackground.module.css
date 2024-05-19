@@ -2,43 +2,57 @@
     position: relative;
     z-index: 0;
 
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
 
     display: grid;
     grid-template-areas: "stack";
+
+    perspective: 2px;
+
+    color: var(--color-background);
+    font-weight: 700;
 
     border: 3px solid red;
 }
 
 .parallax > * {
     grid-area: stack;
+    animation: parallax linear;
+    animation-timeline: scroll();
 }
 
 .parallax__back {
     position: absolute;
-
-    object-fit: cover;
+    
+    /* object-fit: cover;
+    object-position: 0 35%; */
 
     height: 100%;
     width: 100%;
+
+    /*  */
 
     z-index: 1;
 }
 
 .parallax__front {
-    z-index: 2;
-
-    /*  */
+    position: absolute;
 
     --size: 50rem;
 
     width: var(--size);
     height: var(--size);
 
-    position: absolute;
+    /* object-fit: cover; */
+
     bottom: 0;
     right: 0;
+
+    /*  */
+    
+    z-index: 2;
+
+    --parallax-speed: 20;
 }
 
 .parallax__hero {
@@ -50,26 +64,31 @@
     height: 100%;
     width: 40%;
 
-    z-index: 3;
-
     padding-inline: 3.5rem;
-
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    
     text-align: start;
-
+    
     border: 3px solid black;
+
+    /*  */
+
+    z-index: 3;
+
+    --parallax-speed: 30;
 }
 
+/* Sets everything in the hero section to fill */
 .parallax__hero * {
     width: 100%;
 }
 
 @keyframes parallax {
     to {
-        transform: translateY(5000px);
+        transform: translateY(calc(var(--parallax-speed) * 200px));
     }
 }
