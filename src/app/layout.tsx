@@ -4,6 +4,7 @@ import { Vesper_Libre } from "next/font/google";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import ScrollToTop from "@/components/footer/scrollToTop/ScrollToTop";
+import ParallaxBackground from "@/components/division/parallaxBackground/ParallaxBackground";
 
 const vesperLibre = Vesper_Libre({
   weight: "400",
@@ -24,7 +25,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={vesperLibre.className}>
         <Navbar />
-        {children}
+        <main id="main">{children}</main>
         <Footer />
         <ScrollToTop />
       </body>

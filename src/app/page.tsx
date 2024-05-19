@@ -1,12 +1,15 @@
 import Image from "next/image";
 import styles from "./page.module.css";
 import SubHeader from "@/components/text/subHeader/SubHeader";
-import Header from "@/components/text/header/Header";
 import Section from "@/components/division/section/Section";
+import ParallaxBackground from "@/components/division/parallaxBackground/ParallaxBackground";
 
 export default function Home() {
   return (
-    <main id="main">
+    <>
+      <Section id="hero">
+        <ParallaxBackground frontUrl={"/hero/foreground.png"} backUrl={"/hero/background.jpg"} />
+      </Section>
       <Section id="section">
         <SubHeader>SubHeader is a very nice type of tag!</SubHeader>
       </Section>
@@ -58,6 +61,6 @@ export default function Home() {
           Molestias alias pariatur assumenda laborum iste?
         </p>
       </Section>
-    </main>
+    </>
   );
 }
