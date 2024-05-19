@@ -6,7 +6,14 @@ interface Props {
 }
 
 const Section = ({ children, id }: Props) => {
-  return <section className={styles.container} id={id}>{children}</section>;
+  return (
+    <section
+      className={`${styles.container} ${id == "hero" ? styles.hero : ""}`}
+      id={id}
+    >
+      {children}
+    </section>
+  );
 };
 
 export default Section;
