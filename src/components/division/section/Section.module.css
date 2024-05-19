@@ -13,8 +13,6 @@
     z-index: 0;
 
     overflow: hidden;
-
-    border: 3px solid red;
 }
 
 .container.hero {
@@ -24,6 +22,4 @@
 
     height: 75dvh;
     /* width: 100dvw; */
-
-    border: 3px solid blue;
 }
