@@ -6,9 +6,10 @@ const Contour_Generator = localFont({ src: "../../../../public/font/CONTOUR-GENE
 
 interface Props {
   children: React.ReactNode | React.ReactNode[];
+  className?: string;
 }
 
-const Header = ({ children }: Props) => {
+const Header = ({ children, className }: Props) => {
   let id: string = "";
 
   // sets the id based on the text of the SubHeader
@@ -18,7 +19,7 @@ const Header = ({ children }: Props) => {
     id = text.split(' ').join('-').toLowerCase();
   }
 
-  return <h1 id={id} className={`${Contour_Generator.className} ${styles.container}`}>{children}</h1>;
+  return <h1 id={id} className={`${Contour_Generator.className} ${styles.container} ${className}`}>{children}</h1>;
 };
 
 export default Header;
