@@ -1,4 +1,4 @@
-.container {
+.container:not(.hero) {
     height: 100dvh;
     width: 80%;
     margin-inline: auto;
@@ -9,12 +9,21 @@
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+
+    z-index: 0;
+
+    overflow: hidden;
+
+    border: 3px solid red;
 }
 
 .container.hero {
-    align-items: center;
-}
+    position: relative;
+    left: 0;
+    right: 0;
 
-.container * {
-    height: fit-content;
+    height: 75dvh;
+    /* width: 100dvw; */
+
+    border: 3px solid blue;
 }
