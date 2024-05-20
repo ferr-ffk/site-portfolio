@@ -11,15 +11,15 @@
     gap: 2rem;
 
     z-index: 0;
-
-    overflow: hidden;
 }
 
 .container.hero {
-    position: relative;
-    left: 0;
-    right: 0;
-
     height: 75dvh;
-    /* width: 100dvw; */
+
+    --border: 2px solid black;
+
+    border-top: var(--border);
+    border-bottom: var(--border);
+
+    font-size: 1.5rem;
 }
