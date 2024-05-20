@@ -1,24 +1,11 @@
 import SubHeader from "@/components/text/subHeader/SubHeader";
 import Section from "@/components/division/section/Section";
-import ParallaxBackground from "@/components/division/parallaxBackground/ParallaxBackground";
-import Header from "@/components/text/header/Header";
+import Hero from "@/components/content/hero/Hero";
 
 export default function Home() {
   return (
     <>
-      <Section id="hero">
-        <ParallaxBackground
-          frontUrl={"/hero/foreground.png"}
-          backUrl={"/hero/background.jpg"}
-        >
-          <Header>ola pessoal lorem20</Header>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
-            magni cupiditate ea fuga, blanditiis expedita tenetur error, ipsum
-            earum natus voluptate perferendis amet quaerat ipsam.
-          </p>
-        </ParallaxBackground>
-      </Section>
+      <Hero />
       <Section id="section">
         <SubHeader>SubHeader is a very nice type of tag!</SubHeader>
       </Section>
