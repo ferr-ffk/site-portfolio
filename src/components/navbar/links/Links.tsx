@@ -9,7 +9,7 @@ import Button from "@/components/button/Button";
 import { AiOutlineMenu } from "react-icons/ai";
 
 const links = () => {
-  const [open, setOpen] = useState(true); // TODO: CHANGE TRUE TO FALSE BEFORE
+  const [open, setOpen] = useState(false);
 
   return (
     <>
