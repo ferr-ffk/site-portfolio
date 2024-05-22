@@ -1,3 +1,4 @@
+import { MouseEventHandler } from "react";
 import styles from "./Button.module.css";
 
 import { Oswald } from "next/font/google";
@@ -10,11 +11,15 @@ const oswald = Oswald({
 interface Props {
   children?: React.ReactNode | React.ReactNode[];
   className?: string;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
-const Button = ({ children, className }: Props) => {
+const Button = ({ children, className, onClick }: Props) => {
   return (
-    <button className={`${styles.container} ${oswald.className} ${className}`}>
+    <button
+      className={`${styles.container} ${oswald.className} ${className}`}
+      onClick={onClick}
+    >
       {children}
     </button>
   );
