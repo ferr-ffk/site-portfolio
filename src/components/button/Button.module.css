@@ -8,10 +8,6 @@
   border: none;
   background-color: transparent;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   transition: ease-in-out all 0.5s;
 }
 
