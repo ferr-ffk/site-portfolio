@@ -1,0 +1,19 @@
+.container {
+  padding: 0.125rem 0.625rem;
+
+  font-size: 2rem;
+
+  text-transform: uppercase;
+
+  border: none;
+  background-color: transparent;
+
+  transition: ease-in-out all 0.5s;
+}
+
+.container:hover,
+.container:focus-within {
+  cursor: pointer;
+
+  opacity: 0.6;
+}
