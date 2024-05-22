@@ -58,6 +58,14 @@
     text-align: start;
 }
 
+@media screen and (max-width: 700px) {
+    .parallax__hero {
+        width: 80%;
+
+        font-size: 1.25rem;
+    }
+}
+
 /* Sets everything in the hero section to fill */
 .parallax__hero * {
     width: 100%;
