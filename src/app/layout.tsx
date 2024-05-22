@@ -24,10 +24,12 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={vesperLibre.className}>
-        <Navbar />
-        <main id="main">{children}</main>
-        <Footer />
-        <ScrollToTop />
+        <div className="container">
+          <Navbar />
+          <main id="main">{children}</main>
+          <Footer />
+          <ScrollToTop />
+        </div>
       </body>
     </html>
   );

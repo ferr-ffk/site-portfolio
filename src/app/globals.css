@@ -50,6 +50,10 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  overflow-x: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
