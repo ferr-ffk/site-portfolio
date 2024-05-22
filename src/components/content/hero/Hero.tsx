@@ -12,12 +12,8 @@ const hero = () => {
         <Header>fernando f. de lira</Header>
         <p>
           Designer e desenvolvedor front end,
-        </p>
-        <p>
           desenvolver indie,
-        </p>
-        <p>
-            e cursando informática
+          e cursando informática
         </p>
       </ParallaxBackground>
     </Section>
