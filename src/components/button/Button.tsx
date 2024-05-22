@@ -1,5 +1,6 @@
-import { MouseEventHandler } from "react";
 import styles from "./Button.module.css";
+
+import { MouseEventHandler } from "react";
 
 import { Oswald } from "next/font/google";
 
