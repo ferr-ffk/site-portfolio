@@ -1,5 +1,9 @@
 .container {
-    font-size: 4dvw;
-
     z-index: 10;
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        font-size: 2rem;
+    }
 }
