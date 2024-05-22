@@ -9,7 +9,7 @@ const oswald = Oswald({
 });
 
 interface Props {
-  children?: React.ReactNode | React.ReactNode[];
+  children?: React.ReactNode;
   className?: string;
   onClick?: MouseEventHandler<HTMLButtonElement>;
 }
