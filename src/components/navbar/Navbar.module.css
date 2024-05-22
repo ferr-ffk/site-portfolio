@@ -28,7 +28,7 @@
 
 .mobile_links,
 .mobile_links_button {
-  display: none;
+  display: none !important;
 }
 
 .mobile_links_container {
