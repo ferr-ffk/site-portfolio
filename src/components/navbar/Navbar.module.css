@@ -1,23 +1,46 @@
 .container {
-    z-index: 2;
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  z-index: 2;
 
-    height: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    font-size: 1.5rem;
+  max-width: 100%;
+  height: 6.5rem;
+
+  font-size: 1.5rem;
+
+  padding-inline: 1.5rem;
 }
 
 .logo {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
-.links {
-    flex-grow: .25;
-    list-style-type: none;
+.links,
+.mobile_links {
+  flex-grow: 0.25;
+  list-style-type: none;
 
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobile_links,
+.mobile_links_button {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .links {
+    display: none;
+  }
+
+  .mobile_links_button {
+    display: block;
+  }
+
+  .mobile_links {
     display: flex;
-    justify-content: space-between;
+  }
 }
