@@ -61,6 +61,8 @@ html {
 body {
   margin-inline: auto;
   width: 1440px;
+
+  font-size: larger;
 }
 
 a {
