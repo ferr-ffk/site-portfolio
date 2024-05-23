@@ -1,5 +1,5 @@
 .container:not(.hero) {
-    height: 100dvh;
+    min-height: 100dvh;
     width: 80%;
     margin-inline: auto;
 
