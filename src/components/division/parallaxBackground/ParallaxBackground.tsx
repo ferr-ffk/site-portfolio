@@ -12,7 +12,7 @@ const ParallaxBackground = ({ frontUrl, backUrl, children }: Props) => {
   addEventListener("scroll", handleScroll);
 
   return (
-    <div className={styles.parallax}>
+    <span className={styles.parallax}>
       <img
         id="parallax-back"
         src={backUrl}
@@ -28,7 +28,7 @@ const ParallaxBackground = ({ frontUrl, backUrl, children }: Props) => {
       <div id="hero-text" className={styles.parallax__hero}>
         {children}
       </div>
-    </div>
+    </span>
   );
 };
 
