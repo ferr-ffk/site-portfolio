@@ -1,6 +1,6 @@
 "use client";
 
-import { MouseEventHandler, useState } from "react";
+import { useState } from "react";
 import styles from "./ScrollToTop.module.css";
 
 import { IoIosArrowUp } from "react-icons/io";
