@@ -21,7 +21,9 @@ const ScrollToTop = () => {
     }
   };
 
-  window.addEventListener("scroll", toggleVisible);
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", toggleVisible);
+  }
 
   return (
     <div className={styles.container}>

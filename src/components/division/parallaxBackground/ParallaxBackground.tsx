@@ -9,7 +9,9 @@ interface Props {
 }
 
 const ParallaxBackground = ({ frontUrl, backUrl, children }: Props) => {
-  addEventListener("scroll", handleScroll);
+  if (typeof addEventListener === "function") {
+    addEventListener("scroll", handleScroll);
+  }
 
   return (
     <span className={styles.parallax}>
@@ -37,12 +39,17 @@ export default ParallaxBackground;
 function handleScroll(this: HTMLElement, ev: Event) {
   const scrollTop = document.documentElement.scrollTop;
 
-  const background = document.documentElement.querySelector<HTMLImageElement>("#parallax-back")!;
-  const foreground = document.documentElement.querySelector<HTMLImageElement>("#parallax-front")!;
-  const hero = document.documentElement.querySelector<HTMLDivElement>("#hero-text")!;
+  const background =
+    document.documentElement.querySelector<HTMLImageElement>("#parallax-back")!;
+  const foreground =
+    document.documentElement.querySelector<HTMLImageElement>(
+      "#parallax-front"
+    )!;
+  const hero =
+    document.documentElement.querySelector<HTMLDivElement>("#hero-text")!;
 
   if (background) {
-    if (background.style.getPropertyValue('object-fit') !== "none") {
+    if (background.style.getPropertyValue("object-fit") !== "none") {
       background.style.objectPosition = `0 ${scrollTop * -0.2}px`;
     }
   }
