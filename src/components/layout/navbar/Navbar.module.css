@@ -46,6 +46,14 @@
     border-left: 2px solid var(--color-text);
 
     padding: 0.625rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.mobile_links_container > * {
+  flex-grow: 0;
 }
 
 .mobile_links_container ul {
