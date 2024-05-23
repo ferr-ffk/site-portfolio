@@ -59,6 +59,8 @@ html {
 }
 
 body {
+  background-color: var(--color-background);
+
   margin-inline: auto;
   width: 1440px;
 }
