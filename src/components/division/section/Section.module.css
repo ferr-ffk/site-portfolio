@@ -19,6 +19,8 @@
     flex-direction: column;
     justify-content: center;
 
+    max-width: 80ch;
+
     flex: 1;
 }
 
