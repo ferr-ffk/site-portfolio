@@ -5,8 +5,8 @@ import styles from "../Navbar.module.css";
 import LinkButton from "@/components/text/linkButton/LinkButton";
 import NavbarLink from "../navbarLink/NavbarLink";
 import { useState } from "react";
-import Button from "@/components/button/Button";
 import { AiOutlineMenu } from "react-icons/ai";
+import Button from "../../button/Button";
 
 const links = () => {
   const [open, setOpen] = useState(false);

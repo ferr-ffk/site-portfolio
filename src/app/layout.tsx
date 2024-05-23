@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Vesper_Libre } from "next/font/google";
-import Navbar from "@/components/navbar/Navbar";
-import Footer from "@/components/footer/Footer";
-import ScrollToTop from "@/components/footer/scrollToTop/ScrollToTop";
-import ParallaxBackground from "@/components/division/parallaxBackground/ParallaxBackground";
+import Footer from "@/components/layout/footer/Footer";
+import ScrollToTop from "@/components/layout/footer/scrollToTop/ScrollToTop";
+import Navbar from "@/components/layout/navbar/Navbar";
 
 const vesperLibre = Vesper_Libre({
   weight: ["400", "500", "700", "900"],

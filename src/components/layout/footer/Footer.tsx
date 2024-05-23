@@ -6,7 +6,7 @@ import { MdOutlineMail } from "react-icons/md";
 import Link from "next/link";
 import localFont from "next/font/local";
 
-const Contour_Generator = localFont({ src: "../../../public/font/CONTOUR-GENERATOR.ttf" });
+const Contour_Generator = localFont({ src: "../../../../public/font/CONTOUR-GENERATOR.ttf" });
 
 const links = [
   {
