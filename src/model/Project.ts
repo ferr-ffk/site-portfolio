@@ -3,7 +3,7 @@ type Project = {
     description: string;
     anchor: string;
     
-    projectImageURL: URL;
+    projectImageURL: string;
 };
 
 export default Project;
