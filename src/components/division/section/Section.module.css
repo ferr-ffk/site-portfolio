@@ -33,7 +33,7 @@
 .container.hero {
     height: 75dvh;
 
-    --border: 2px solid black;
+    --border: 2px solid var(--color-text);
 
     border-top: var(--border);
     border-bottom: var(--border);
