@@ -1,36 +1,61 @@
 .scrollContainer {
-    width: 100%;
-    overflow-x: scroll;
+  width: 100%;
+  overflow-x: scroll;
 
-    background-color: var(--color-background-secondary);
-    color: var(--ivory);
+  background-color: var(--color-background-secondary);
+  color: var(--ivory);
 
-    padding: 5rem 2.25rem;
+  padding: 5rem 2.25rem;
+}
+
+/* width */
+.scrollContainer::-webkit-scrollbar {
+  --size: 8px;
+
+  height: var(--size);
+  width: var(--size);
+
+  /* transition: all var(--ease-out-back) 0.5s; */
+}
+
+/* Track */
+.scrollContainer::-webkit-scrollbar-track {
+  background: var(--color-background);
+}
+
+/* Handle */
+.scrollContainer::-webkit-scrollbar-thumb {
+  background: var(--color-accent);
+}
+
+/* Handle on hover */
+.scrollContainer::-webkit-scrollbar-thumb:hover {
+  background: gray;
 }
 
 .container {
-    height: 50dvh;
-    width: fit-content;
+  height: 50dvh;
+  width: fit-content;
 
-    display: flex;
-    gap: 4rem;
+  display: flex;
+  gap: 4rem;
 }
 
 .container > * {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 @media screen and (max-width: 768px) {
-    .scrollContainer {
-        padding: 2rem 1.25rem;
-    }
+  .scrollContainer {
+    padding: 2rem 1.25rem;
+  }
 
-    .container {
-        align-items: center;
-    }
-    
-    .container > * {
-        height: 100%;
-        width: 100%;
-    }
+  .container {
+    align-items: center;
+  }
+
+  .container > * {
+    height: 100%;
+    width: 100%;
+  }
 }
