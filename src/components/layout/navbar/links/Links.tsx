@@ -11,6 +11,10 @@ import Button from "../../button/Button";
 const links = () => {
   const [open, setOpen] = useState(false);
 
+  const handleMobileNavbarLinkClick = () => {
+    setOpen(false);
+  }
+
   return (
     <>
       <ul className={styles.links}>
@@ -47,13 +51,13 @@ const links = () => {
               </Button>
             </li>
             <li key="sobre">
-              <NavbarLink href="#sobre">sobre</NavbarLink>
+              <NavbarLink href="#sobre" onClick={handleMobileNavbarLinkClick}>sobre</NavbarLink>
             </li>
             <li key="projetos">
-              <NavbarLink href="#projetos">projetos</NavbarLink>
+              <NavbarLink href="#projetos" onClick={handleMobileNavbarLinkClick}>projetos</NavbarLink>
             </li>
             <li key="contato">
-              <NavbarLink href="#contato">contato</NavbarLink>
+              <NavbarLink href="#contato" onClick={handleMobileNavbarLinkClick}>contato</NavbarLink>
             </li>
             <li key="curriculo">
               <LinkButton href="\cv\curriculum-vitae.pdf" isPdf>
