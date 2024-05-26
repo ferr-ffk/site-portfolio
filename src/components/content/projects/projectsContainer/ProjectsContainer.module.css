@@ -42,12 +42,15 @@
 }
 
 .container > * {
+  width: 25%;
+  height: 100%;
+
   flex-shrink: 0;
 }
 
 @media screen and (max-width: 768px) {
   .scrollContainer {
-    padding: 2rem 1.25rem;
+    padding: 2rem 0;
   }
 
   .container {
@@ -55,7 +58,8 @@
   }
 
   .container > * {
-    height: 100%;
-    width: 100%;
+    width: 100dvw;
+
+    padding-inline: 2.5rem;
   }
 }
