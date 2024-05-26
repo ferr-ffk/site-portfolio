@@ -2,8 +2,8 @@
     width: 100%;
     overflow-x: scroll;
 
-    background-color: var(--color-text);
-    color: var(--color-background);
+    background-color: var(--black);
+    color: var(--ivory);
 
     padding: 5rem 2.25rem;
 }
