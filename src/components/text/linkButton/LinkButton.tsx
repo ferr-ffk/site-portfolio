@@ -11,12 +11,13 @@ interface Props {
   children: React.ReactNode | React.ReactNode[];
   href: string;
   isPdf?: boolean;
+  targetBlank?: boolean;
 }
 
-const LinkButton = ({ children, href, isPdf }: Props) => {
+const LinkButton = ({ children, href, isPdf, targetBlank }: Props) => {
   const text = (children as string).toUpperCase();
 
-  const target = isPdf ? "_blank" : "";
+  const target = isPdf || targetBlank ? "_blank" : "";
   const rel = isPdf ? "noopener noreferrer" : "";
 
   return (
