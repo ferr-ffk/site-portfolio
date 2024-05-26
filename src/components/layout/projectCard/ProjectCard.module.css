@@ -7,6 +7,8 @@
     gap: 0.6rem;
     
     width: 33%;
+
+    background-color: var(--marine-blue);
 }
 
 .imageContainer {
