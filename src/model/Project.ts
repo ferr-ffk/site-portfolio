@@ -4,6 +4,8 @@ type Project = {
     anchor: string;
     
     projectImageURL: string;
+
+    imageAlt?: string;
 };
 
 export default Project;
