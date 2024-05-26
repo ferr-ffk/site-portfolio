@@ -10,7 +10,7 @@
 
 .container {
     height: 50dvh;
-    width: max-content;
+    width: fit-content;
 
     display: flex;
     gap: 4rem;
@@ -24,13 +24,13 @@
     .scrollContainer {
         padding: 2rem 1.25rem;
     }
-    
+
     .container {
         align-items: center;
     }
-
+    
     .container > * {
         height: 100%;
-        max-width: 20rem;
+        width: 100%;
     }
 }
