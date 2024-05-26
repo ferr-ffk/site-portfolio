@@ -4,6 +4,8 @@
 
     background-color: var(--color-text);
     color: var(--color-background);
+
+    padding: 5rem 2.25rem;
 }
 
 .container {
