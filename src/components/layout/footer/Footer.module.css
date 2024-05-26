@@ -59,4 +59,15 @@
 
 .logo {
     font-size: 3rem;
+
+    transition: all var(--ease-out-back) 0.4s;
+}
+
+.logo:hover, .logo:focus-within {
+    opacity: 0.8;
+}
+
+.logo:active {
+    opacity: 1;
+    color: var(--color-secondary);
 }
