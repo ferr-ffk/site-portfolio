@@ -1,14 +1,18 @@
+import Project from "@/model/Project";
 import styles from "./ProjectsContainer.module.css";
+import ProjectCard from "@/components/layout/projectCard/ProjectCard";
 
 interface Props {
-    children?: React.ReactNode | React.ReactNode[];
+    projects: Project[];
 }
 
-const ProjectsContainer = ({children}: Props) => {
+const ProjectsContainer = ({projects}: Props) => {
   return (
     <div className={styles.scrollContainer}>
         <div className={styles.container}>
-            {children}
+            {projects.map(project => (
+                <ProjectCard project={project} />
+            ))}
         </div>
     </div>
   );
