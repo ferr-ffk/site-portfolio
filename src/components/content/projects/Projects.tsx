@@ -1,15 +1,50 @@
 import Section from "@/components/division/section/Section";
 import SubHeader from "@/components/text/subHeader/SubHeader";
+import ProjectsContainer from "./projectsContainer/ProjectsContainer";
+import ProjectCard from "@/components/layout/projectCard/ProjectCard";
 
 const Projects = () => {
   return (
     <Section id="projetos" vertical>
       <SubHeader>Projetos</SubHeader>
-      <div>
-        <div>projeto1</div>
-        <div>projeto2</div>
-        <div>projeto3</div>
-      </div>
+      <ProjectsContainer>
+        <ProjectCard project={{
+          name: "Justa Arena",
+          description: "Um jogo estilo Vampire Survivor feito em Godot 4.2",
+          anchor: "https://github.com/ferr-ffk/survivor-firebelley",
+          projectImageURL: "/hero/background.jpg"
+        }} />
+        <ProjectCard project={{
+          name: "Justa Arena",
+          description: "Um jogo estilo Vampire Survivor feito em Godot 4.2",
+          anchor: "https://github.com/ferr-ffk/survivor-firebelley",
+          projectImageURL: "/hero/background.jpg"
+        }} />
+        <ProjectCard project={{
+          name: "Justa Arena",
+          description: "Um jogo estilo Vampire Survivor feito em Godot 4.2",
+          anchor: "https://github.com/ferr-ffk/survivor-firebelley",
+          projectImageURL: "/hero/background.jpg"
+        }} />
+        <ProjectCard project={{
+          name: "Justa Arena",
+          description: "Um jogo estilo Vampire Survivor feito em Godot 4.2",
+          anchor: "https://github.com/ferr-ffk/survivor-firebelley",
+          projectImageURL: "/hero/background.jpg"
+        }} />
+        <ProjectCard project={{
+          name: "Justa Arena",
+          description: "Um jogo estilo Vampire Survivor feito em Godot 4.2",
+          anchor: "https://github.com/ferr-ffk/survivor-firebelley",
+          projectImageURL: "/hero/background.jpg"
+        }} />
+        <ProjectCard project={{
+          name: "Justa Arena",
+          description: "Um jogo estilo Vampire Survivor feito em Godot 4.2",
+          anchor: "https://github.com/ferr-ffk/survivor-firebelley",
+          projectImageURL: "/hero/background.jpg"
+        }} />
+      </ProjectsContainer>
     </Section>
   );
 };
