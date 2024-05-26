@@ -10,6 +10,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    transition: all var(--ease-out-back) 0.3s;
+}
+
+.container:hover, .container:focus-within {
+    opacity: 0.8;
+}
+
+.container:active {
+    top: calc(var(--position-offset) + 0.3rem);
 }
 
 .link {
