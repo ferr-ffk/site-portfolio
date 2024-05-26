@@ -10,5 +10,11 @@
 }
 
 .container:hover, .container:focus-within {
-    background-color: var(--color-accent);
+    opacity: 0.8;
+}
+
+.big {
+    background-color: var(--color-primary);
+
+    font-size: 1.5rem;
 }

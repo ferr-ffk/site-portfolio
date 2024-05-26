@@ -19,7 +19,7 @@ const ProjectCard = ({ project }: Props) => {
         <h3>{project.name}</h3>
         <p>{project.description}</p>
         <div style={{ display: "flex", justifyContent: "center", padding: "1.625rem 0"}}>
-          <LinkButton href={project.anchor} targetBlank>
+          <LinkButton href={project.anchor} targetBlank big>
             Conferir
           </LinkButton>
         </div>

@@ -12,9 +12,10 @@ interface Props {
   href: string;
   isPdf?: boolean;
   targetBlank?: boolean;
+  big?: boolean;
 }
 
-const LinkButton = ({ children, href, isPdf, targetBlank }: Props) => {
+const LinkButton = ({ children, href, isPdf, targetBlank, big }: Props) => {
   const text = (children as string).toUpperCase();
 
   const target = isPdf || targetBlank ? "_blank" : "";
@@ -23,7 +24,7 @@ const LinkButton = ({ children, href, isPdf, targetBlank }: Props) => {
   return (
     <a
       href={href}
-      className={`${styles.container} ${oswald.className}`}
+      className={`${styles.container} ${oswald.className} ${big ? styles.big : ""}`}
       target={target}
       rel={rel}
     >
