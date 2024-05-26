@@ -10,7 +10,7 @@
 
 .container {
     height: 50dvh;
-    width: 100%;
+    width: max-content;
 
     display: flex;
     gap: 4rem;
@@ -18,4 +18,19 @@
 
 .container > * {
     flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .scrollContainer {
+        padding: 2rem 1.25rem;
+    }
+    
+    .container {
+        align-items: center;
+    }
+
+    .container > * {
+        height: 100%;
+        max-width: 20rem;
+    }
 }
