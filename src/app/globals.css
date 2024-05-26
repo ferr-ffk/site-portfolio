@@ -65,6 +65,10 @@ body {
 
   margin-inline: auto;
   width: 1440px;
+
+  background-image: radial-gradient(rgba(128, 128, 128, 0.493) 1px, transparent 0);
+  background-size: 40px 40px;
+  background-position: -19px -19px;
 }
 
 a {
