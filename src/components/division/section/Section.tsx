@@ -9,9 +9,9 @@ interface Props {
 const Section = ({ children, id, vertical = false }: Props) => {
   return (
     <section
-      className={`${styles.container} ${id == "hero" ? styles.hero : ""} ${
+      className={`${styles.container} ${id === "hero" ? styles.hero : ""} ${
         vertical ? styles.vertical : ""
-      }`}
+      } ${id == "projetos" ? styles.projects : ""}`}
       id={id}
     >
       {children}
