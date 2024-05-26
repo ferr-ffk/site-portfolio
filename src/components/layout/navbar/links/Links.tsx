@@ -49,8 +49,8 @@ const links = () => {
             <li key="sobre">
               <NavbarLink href="#sobre">sobre</NavbarLink>
             </li>
-            <li key="projeto">
-              <NavbarLink href="#projeto">projetos</NavbarLink>
+            <li key="projetos">
+              <NavbarLink href="#projetos">projetos</NavbarLink>
             </li>
             <li key="contato">
               <NavbarLink href="#contato">contato</NavbarLink>
