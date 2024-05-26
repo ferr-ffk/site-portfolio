@@ -19,15 +19,15 @@ const ParallaxBackground = ({ frontUrl, backUrl, children }: Props) => {
         id="parallax-back"
         src={backUrl}
         alt=""
-        className={styles.parallax__back}
+        className={`${styles.parallax__back} unselectable`}
       />
       <img
         id="parallax-front"
         src={frontUrl}
         alt=""
-        className={styles.parallax__front}
+        className={`${styles.parallax__front} unselectable`}
       />
-      <div id="hero-text" className={styles.parallax__hero}>
+      <div id="hero-text" className={`${styles.parallax__hero} unselectable`}>
         {children}
       </div>
     </span>
