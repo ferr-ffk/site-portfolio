@@ -7,7 +7,7 @@ const Contact = () => {
     <Section id="contato" vertical>
         <SubHeader>Contato</SubHeader>
         <div>
-          <Input name="Teste" id="teste" />
+          <Input name="Teste" id="teste" placeholder="placeholder" />
         </div>
     </Section>
   );
