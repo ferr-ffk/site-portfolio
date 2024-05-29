@@ -11,10 +11,21 @@ interface Props {
   value?: number | string | undefined;
   onChange?: ChangeEventHandler<HTMLInputElement>;
 
+  className?: string;
+
   required?: boolean;
 }
 
-const Input = ({ name, id, type, placeholder, value, onChange, required }: Props) => {
+const Input = ({
+  name,
+  id,
+  type,
+  placeholder,
+  value,
+  className,
+  onChange,
+  required,
+}: Props) => {
   return (
     <>
       <label
@@ -26,7 +37,7 @@ const Input = ({ name, id, type, placeholder, value, onChange, required }: Props
       <input
         name={name}
         id={id}
-        className={styles.container}
+        className={`${styles.container} ${className}`}
         type={type}
         placeholder={placeholder}
         value={value}
