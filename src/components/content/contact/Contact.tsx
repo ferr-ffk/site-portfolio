@@ -6,8 +6,10 @@ const Contact = () => {
   return (
     <Section id="contato" vertical>
         <SubHeader>Contato</SubHeader>
+        <p>Me mande um email!</p>
         <div>
-          <Input name="Teste" id="teste" placeholder="placeholder" />
+          <Input name="to" id="to" placeholder="Para" value="freitaslira18@gmail.com" disabled/>
+          <Input name="subject" id="subject" placeholder="Assunto" />
         </div>
     </Section>
   );

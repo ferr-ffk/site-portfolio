@@ -9,6 +9,11 @@
     transition: all ease-in-out 0.15s;
 }
 
+.container:disabled {
+    background-color: rgba(128, 128, 128, 0.315);
+    opacity: 0.7;
+}
+
 .container::placeholder {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
