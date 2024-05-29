@@ -1,4 +1,4 @@
-import { ChangeEvent, ChangeEventHandler } from "react";
+import { ChangeEventHandler } from "react";
 import styles from "./Input.module.css";
 
 interface Props {
@@ -9,10 +9,12 @@ interface Props {
   value?: string | number | undefined;
   onChange?: ChangeEventHandler<HTMLInputElement>;
 
+  disabled?: boolean;
+
   className?: string;
 }
 
-const TextField = ({ name, id, className, placeholder, onChange, value }: Props) => {
+const TextField = ({ name, id, className, placeholder, onChange, value, disabled }: Props) => {
   return (
     <input
       type="text"
@@ -22,6 +24,7 @@ const TextField = ({ name, id, className, placeholder, onChange, value }: Props)
       onChange={onChange}
       value={value}
       placeholder={placeholder}
+      disabled={disabled}
     />
   );
 };
