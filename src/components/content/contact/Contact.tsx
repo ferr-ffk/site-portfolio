@@ -1,5 +1,5 @@
 import Section from "@/components/division/section/Section";
-import Input from "@/components/form/text/Input";
+import Input from "@/components/form/input/Input";
 import SubHeader from "@/components/text/subHeader/SubHeader";
 
 const Contact = () => {
