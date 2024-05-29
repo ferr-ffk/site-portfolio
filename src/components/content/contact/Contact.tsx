@@ -1,5 +1,5 @@
 import Section from "@/components/division/section/Section";
-import Input from "@/components/form/input/Input";
+import Input from "@/components/form/text/Input";
 import SubHeader from "@/components/text/subHeader/SubHeader";
 
 const Contact = () => {
@@ -7,7 +7,7 @@ const Contact = () => {
     <Section id="contato" vertical>
         <SubHeader>Contato</SubHeader>
         <div>
-          <Input type="text" placeholder="placeholder" name="Text Field" id="text-field" required/>
+          <Input name="Teste" id="teste" />
         </div>
     </Section>
   );

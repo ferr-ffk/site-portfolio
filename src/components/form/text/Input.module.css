@@ -1,0 +1,14 @@
+.container {
+    border: 2px solid var(--color-text);
+
+    background-color: transparent;
+
+    padding: 1.125rem 0.625rem;
+    font-size: 1.5rem;
+
+    transition: all ease-in-out 0.15s;
+}
+
+.container:focus {
+    padding: 1.125rem 0.925rem;
+}
