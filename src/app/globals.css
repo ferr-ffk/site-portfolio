@@ -81,6 +81,10 @@ img {
   max-width: 100%;
 }
 
+textarea {
+  resize: none;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
