@@ -5,6 +5,8 @@ import TextField from "@/components/form/textField/TextField";
 import { useRouter } from "next/navigation";
 import { ChangeEvent, FormEvent } from "react";
 
+import styles from "./ContactForm.module.css";
+
 const ContactForm = () => {
   const router = useRouter();
 
@@ -27,7 +29,7 @@ const ContactForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className={styles.container}>
       <TextField
         name="to"
         id="to"
