@@ -39,7 +39,7 @@ const links = () => {
       >
         <AiOutlineMenu />
       </Button>
-        <div className={styles.mobile_links_container} style={{ display: (open ? "block" : "none") }}>
+        <div className={styles.mobile_links_container} style={{ right: (open ? "0" : "-100%") }}>
           <ul className={styles.mobile_links}>
             <li key="menu_button">
               <Button
