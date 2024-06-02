@@ -47,6 +47,10 @@
     --color-background-secondary: #0e0b0c;
     --color-text: var(--ivory)
   }
+
+  html {
+    color-scheme: dark;
+  }
 }
 
 * {
@@ -89,12 +93,6 @@ img {
 
 textarea {
   resize: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
 
 .unselectable {
