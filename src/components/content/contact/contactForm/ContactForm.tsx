@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { ChangeEvent, FormEvent } from "react";
 
 import styles from "./ContactForm.module.css";
+import Button from "@/components/layout/button/Button";
 
 const ContactForm = () => {
   const router = useRouter();
@@ -44,7 +45,7 @@ const ContactForm = () => {
         placeholder="Assunto"
       />
       <TextArea onChange={handleContentChange} name="content" id="content" />
-      <button type="submit">Enviar</button>
+      <Button type="submit">Enviar</Button>
     </form>
   );
 };
