@@ -35,7 +35,7 @@
 }
 
 .container.hero {
-    height: 75dvh;
+    height: calc(100dvh - 6.5rem);
 
     --border: 2px solid var(--color-text);
 
