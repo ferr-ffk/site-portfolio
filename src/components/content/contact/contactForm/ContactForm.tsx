@@ -18,7 +18,9 @@ const ContactForm = () => {
   function handleSubmit(event: FormEvent<HTMLFormElement>): void {
     event.preventDefault();
 
-    router.push(`mailto:freitaslira18@gmail.com?subject=${subject}&body=${content}`);
+    router.push(
+      `mailto:freitaslira18@gmail.com?subject=${subject}&body=${content}`
+    );
   }
 
   function handleSubjectChange(event: ChangeEvent<HTMLInputElement>): void {
@@ -44,7 +46,12 @@ const ContactForm = () => {
         id="subject"
         placeholder="Assunto"
       />
-      <TextArea onChange={handleContentChange} name="content" id="content" />
+      <TextArea
+        onChange={handleContentChange}
+        name="content"
+        id="content"
+        placeholder="..."
+      />
       <Button type="submit">Enviar</Button>
     </form>
   );
