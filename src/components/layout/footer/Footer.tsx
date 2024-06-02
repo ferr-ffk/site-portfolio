@@ -3,8 +3,8 @@ import styles from "./Footer.module.css";
 import { FaGithub, FaItchIo, FaLinkedinIn } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 
-import Link from "next/link";
 import localFont from "next/font/local";
+import Logo from "@/components/logo/Logo";
 
 const Contour_Generator = localFont({ src: "../../../../public/font/CONTOUR-GENERATOR.ttf" });
 
@@ -34,9 +34,7 @@ const links = [
 const Footer = () => {
   return (
     <footer className={styles.container}>
-      <Link href="/" className={`${styles.logo} ${Contour_Generator.className}`}>
-        fern
-      </Link>
+      <Logo />
       <ul className={styles.links} id="links">
         {links.map((link) => (
           <li key={link.key}>
