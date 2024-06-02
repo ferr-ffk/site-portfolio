@@ -12,12 +12,14 @@ const oswald = Oswald({
 interface Props {
   children?: React.ReactNode;
   className?: string;
+  type?: "submit" | "reset" | "button" | undefined;
   onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 
-const Button = ({ children, className, onClick }: Props) => {
+const Button = ({ children, className, onClick, type }: Props) => {
   return (
     <button
+      type={type}
       className={`${styles.container} ${oswald.className} ${className}`}
       onClick={onClick}
     >
