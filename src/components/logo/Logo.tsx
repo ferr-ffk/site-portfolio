@@ -9,7 +9,7 @@ const Contour_Generator = localFont({
 const Logo = () => {
   return (
     <div className={`${styles.container} ${Contour_Generator.className}`}>
-      ferdv
+      ferdev
     </div>
   );
 };
