@@ -1,3 +1,4 @@
+import { MouseEventHandler } from "react";
 import styles from "./LinkButton.module.css";
 
 import { Oswald } from "next/font/google";
@@ -13,9 +14,11 @@ interface Props {
   isPdf?: boolean;
   targetBlank?: boolean;
   big?: boolean;
+
+  onClick?: MouseEventHandler<HTMLAnchorElement> | undefined;
 }
 
-const LinkButton = ({ children, href, isPdf, targetBlank, big }: Props) => {
+const LinkButton = ({ children, href, isPdf, targetBlank, big, onClick }: Props) => {
   const text = (children as string).toUpperCase();
 
   const target = isPdf || targetBlank ? "_blank" : "";
@@ -27,6 +30,7 @@ const LinkButton = ({ children, href, isPdf, targetBlank, big }: Props) => {
       className={`${styles.container} ${oswald.className} ${big ? styles.big : ""}`}
       target={target}
       rel={rel}
+      onClick={onClick}
     >
       {text}
     </a>
