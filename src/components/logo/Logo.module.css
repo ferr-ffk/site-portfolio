@@ -10,6 +10,19 @@
     align-items: center;
 }
 
+.link {
+    padding-inline: 0.925rem;
+    
+    transition: all var(--ease-out-back) 0.5s;
+    
+    border-radius: .5rem;
+    border: 2px solid transparent;
+}
+
+.link:hover {
+    border-color: var(--color-text);
+}
+
 @media screen and (max-width: 768px) {
     .container {
         font-size: 2rem;
