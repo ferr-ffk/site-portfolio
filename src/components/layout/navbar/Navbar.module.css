@@ -70,7 +70,7 @@
   }
 
   .mobile_links_button {
-    display: block;
+    display: flex;
   }
 
   .mobile_links {
