@@ -45,11 +45,13 @@
 
   border-left: 2px solid var(--color-text);
 
-  padding: 0.625rem;
+  padding: 1.35rem 1.3rem;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  opacity: 0.8;
 }
 
 .mobile_links_container > * {
