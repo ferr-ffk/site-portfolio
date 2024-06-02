@@ -10,7 +10,7 @@
 
   font-size: 1.5rem;
 
-  padding-inline: 1.5rem;
+  padding-inline: var(--content-padding);
 }
 
 .logo {
