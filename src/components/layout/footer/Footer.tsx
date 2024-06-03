@@ -4,9 +4,7 @@ import { FaGithub, FaItchIo, FaLinkedinIn } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 
 import localFont from "next/font/local";
-import Logo from "@/components/logo/Logo";
-
-const Contour_Generator = localFont({ src: "../../../../public/font/CONTOUR-GENERATOR.ttf" });
+import Logo from "../logo/Logo";
 
 const links = [
   {

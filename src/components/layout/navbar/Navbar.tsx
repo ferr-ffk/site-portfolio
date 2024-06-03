@@ -1,4 +1,4 @@
-import Logo from "@/components/logo/Logo";
+import Logo from "../logo/Logo";
 import styles from "./Navbar.module.css";
 
 import Links from "./links/Links";
