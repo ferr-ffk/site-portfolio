@@ -33,7 +33,6 @@ const Section = ({
             <AnimateOnVisible 
                 animationType="fadeInLeft" 
                 delay={(delay += delayIncrease)}
-                key={child?.toString()}
             >
               {child}
             </AnimateOnVisible>
