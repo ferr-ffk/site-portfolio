@@ -3,7 +3,6 @@ import styles from "./Footer.module.css";
 import { FaGithub, FaItchIo, FaLinkedinIn } from "react-icons/fa6";
 import { MdOutlineMail } from "react-icons/md";
 
-import localFont from "next/font/local";
 import Logo from "../logo/Logo";
 
 const links = [
