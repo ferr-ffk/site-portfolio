@@ -4,7 +4,7 @@ import Header from "@/components/text/header/Header";
 
 const hero = () => {
   return (
-    <Section id="hero">
+    <Section id="hero" disableAnimation>
       <ParallaxBackground
         frontUrl={"/hero/foreground.png"}
         backUrl={"/hero/background.jpg"}

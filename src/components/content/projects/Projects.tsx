@@ -33,7 +33,7 @@ const Projects = () => {
   ]
 
   return (
-    <Section id="projetos" vertical>
+    <Section id="projetos" vertical disableAnimation>
       <SubHeader>Projetos</SubHeader>
       <ProjectsContainer projects={projects} />
     </Section>
