@@ -21,6 +21,7 @@ const Section = ({
   return (
     <section
       id={id}
+      key={id}
       className={`${styles.container} ${id === "hero" && styles.hero}
                   ${vertical && styles.vertical}
                   ${id == "projetos" && styles.projects}

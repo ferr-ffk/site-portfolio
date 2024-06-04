@@ -11,7 +11,7 @@ interface Props {
 
 const ProjectCard = ({ project }: Props) => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} key={project.name}>
       <div className={styles.imageContainer}>
         <Image src={project.projectImageURL} alt={`${project.imageAlt}`} fill sizes="100%" objectFit="cover" />
       </div>
