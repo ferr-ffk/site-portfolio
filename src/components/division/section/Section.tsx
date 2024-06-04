@@ -1,4 +1,4 @@
-import FadeIn from "@/components/layout/fadeIn/FadeIn";
+import AnimateOnVisible from "@/components/layout/animateOnVisible/AnimateOnVisible";
 import styles from "./Section.module.css";
 
 interface Props {
@@ -29,7 +29,7 @@ const Section = ({
       {!Array.isArray(children) || disableAnimation
         ? children
         : children.map((child) => (
-            <FadeIn delay={(delay += delayIncrease)}>{child}</FadeIn>
+            <AnimateOnVisible animationType="fade_in_left" delay={(delay += delayIncrease)}>{child}</AnimateOnVisible>
           ))}
     </section>
   );
