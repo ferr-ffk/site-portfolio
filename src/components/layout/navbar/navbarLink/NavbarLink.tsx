@@ -1,3 +1,5 @@
+import styles from "./NavbarLink.module.css";
+
 import { Oswald } from "next/font/google";
 import { MouseEventHandler } from "react";
 
@@ -14,7 +16,7 @@ interface Props {
 
 const NavbarLink = ({ children, href, onClick }: Props) => {
   return (
-    <a href={href} className={oswald.className} onClick={onClick}>
+    <a href={href} className={`${styles.container} ${oswald.className}`} onClick={onClick}>
       {children}
     </a>
   );
