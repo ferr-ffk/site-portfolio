@@ -19,16 +19,12 @@ const Section = ({
   let delay = 0;
 
   return (
-    <section
-      id={id}
-      key={id}
-      className={`${styles.container} ${id === "hero" && styles.hero}
-                  ${vertical && styles.vertical}
-                  ${id == "projetos" && styles.projects}
-                `}
+    <section id={id} key={id} className={`${styles.container} ${id === "hero" && styles.hero}
+    ${vertical && styles.vertical}
+    ${id == "projetos" && styles.projects}`}
     >
-      {!Array.isArray(children) || disableAnimation
-        ? children
+      {!Array.isArray(children) || disableAnimation ? 
+          children
         : children.map((child) => (
             <AnimateOnVisible animationType="fadeInLeft" delay={(delay += delayIncrease)}>{child}</AnimateOnVisible>
           ))}
