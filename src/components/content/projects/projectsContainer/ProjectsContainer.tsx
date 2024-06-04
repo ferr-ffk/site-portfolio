@@ -11,7 +11,7 @@ const ProjectsContainer = ({projects}: Props) => {
     <div className={styles.scrollContainer}>
         <div className={styles.container}>
             {projects.map(project => (
-              <div>
+              <div key={project.name}>
                 <ProjectCard project={project} />
               </div>
             ))}
