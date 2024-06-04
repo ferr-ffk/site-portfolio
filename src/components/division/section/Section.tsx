@@ -21,10 +21,10 @@ const Section = ({
   return (
     <section
       id={id}
-      className={`${styles.container} ${id === "hero" ? styles.hero : ""} ${
-        vertical ? styles.vertical : ""
-      } ${id == "projetos" ? styles.projects : ""}`}
-    >
+      className={`${styles.container} ${id === "hero" ? styles.hero : ""}
+                  ${vertical ? styles.vertical : ""}
+                  ${id == "projetos" ? styles.projects : ""}
+                `}>
       {!Array.isArray(children) || disableAnimation
         ? children
         : children.map((child) => (
