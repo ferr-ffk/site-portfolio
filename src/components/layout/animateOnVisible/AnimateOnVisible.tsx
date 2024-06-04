@@ -9,9 +9,10 @@ interface Props {
   children: React.ReactNode | React.ReactNode[];
   delay?: number;
   animationType: "fadeInLeft" | "fadeInBottom";
+  key?: string;
 }
 
-const AnimateOnVisible = ({ children, delay: stagger, animationType }: Props) => {
+const AnimateOnVisible = ({ children, delay: stagger, animationType, key }: Props) => {
   const ref = useRef<HTMLDivElement>(null);
   const isVisible = useOnScreen(ref);
 
@@ -36,7 +37,7 @@ const AnimateOnVisible = ({ children, delay: stagger, animationType }: Props) =>
   }, [isVisible]);
 
   return (
-    <div ref={ref} className={`${styles.container} ${className}`}>
+    <div ref={ref} className={`${styles.container} ${className}`} key={key}>
       {children}
     </div>
   );
