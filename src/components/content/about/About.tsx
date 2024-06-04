@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Section from "@/components/division/section/Section";
 import SubHeader from "@/components/text/subHeader/SubHeader";
 
