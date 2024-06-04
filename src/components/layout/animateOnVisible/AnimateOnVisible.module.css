@@ -1,8 +1,8 @@
-.hidden {
-  opacity: 0;
+.container {
+  width: 100%;
 }
 
-.hidden_fade_in_left {
+.hiddenFadeInLeft {
   opacity: 0;
   transform: translateX(-100%);
   filter: blur(10px);
@@ -10,13 +10,13 @@
   transition: all var(--ease-out-back) 500ms;
 }
 
-.fade_in_left {
+.fadeInLeft {
   opacity: 1;
   transform: translateX(0px);
   filter: blur(0px);
 }
 
-.hidden_fade_in_bottom {
+.hiddenFadeInBottom {
   opacity: 0;
   transform: translateY(100%);
   filter: blur(10px);
@@ -24,7 +24,7 @@
   transition: all var(--ease-out-back) 500ms;
 }
 
-.fade_in_bottom {
+.fadeInBottom {
   opacity: 1;
   transform: translateY(0px);
   filter: blur(0px);

@@ -8,7 +8,7 @@ import { useEffect, useRef, useState } from "react";
 interface Props {
   children: React.ReactNode | React.ReactNode[];
   delay?: number;
-  animationType: "fade_in_left" | "fade_in_bottom";
+  animationType: "fadeInLeft" | "fadeInBottom";
 }
 
 const AnimateOnVisible = ({ children, delay: stagger, animationType }: Props) => {
@@ -19,10 +19,10 @@ const AnimateOnVisible = ({ children, delay: stagger, animationType }: Props) =>
 
   let hiddenClassName: string;
 
-  if (animationType === "fade_in_left") {
-    hiddenClassName = styles.hidden_fade_in_left;
-  } else if (animationType === "fade_in_bottom") {
-    hiddenClassName = styles.hidden_fade_in_bottom;
+  if (animationType === "fadeInLeft") {
+    hiddenClassName = styles.hiddenFadeInLeft;
+  } else if (animationType === "fadeInBottom") {
+    hiddenClassName = styles.fadeInBottom;
   }
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const AnimateOnVisible = ({ children, delay: stagger, animationType }: Props) =>
   }, [isVisible]);
 
   return (
-    <div ref={ref} className={className}>
+    <div ref={ref} className={`${styles.container} ${className}`}>
       {children}
     </div>
   );

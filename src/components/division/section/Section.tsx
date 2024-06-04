@@ -29,7 +29,7 @@ const Section = ({
       {!Array.isArray(children) || disableAnimation
         ? children
         : children.map((child) => (
-            <AnimateOnVisible animationType="fade_in_left" delay={(delay += delayIncrease)}>{child}</AnimateOnVisible>
+            <AnimateOnVisible animationType="fadeInLeft" delay={(delay += delayIncrease)}>{child}</AnimateOnVisible>
           ))}
     </section>
   );
