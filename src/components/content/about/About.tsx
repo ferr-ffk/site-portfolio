@@ -1,10 +1,13 @@
 import Section from "@/components/division/section/Section";
 import SubHeader from "@/components/text/subHeader/SubHeader";
+import Spline from "@splinetool/react-spline";
 
 const About = () => {
   return (
     <Section id="sobre">
-      <div>[IMAGE]</div>
+      <div>
+        <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" />
+    </div>
       <div>
         <SubHeader>Sobre mim</SubHeader>
         <p>
