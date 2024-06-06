@@ -58,7 +58,7 @@
     text-align: start;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1366px) {
     .parallax__hero {
         width: 80%;
 
@@ -67,6 +67,7 @@
 
     .parallax__back {
         object-fit: none;
+        object-position: 0 0;
     }
 
     .parallax__front {
