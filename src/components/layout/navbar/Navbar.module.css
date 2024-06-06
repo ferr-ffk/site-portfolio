@@ -27,8 +27,9 @@
 }
 
 .mobile_links,
-.mobile_links_button {
-  display: none;
+.mobile_links_button,
+.mobile_links_container {
+  display: none !important;
 }
 
 .mobile_links_container {
@@ -71,11 +72,9 @@
     display: none;
   }
 
-  .mobile_links_button {
-    display: flex;
-  }
-
-  .mobile_links {
-    display: flex;
+  .mobile_links_button,
+  .mobile_links,
+  .mobile_links_container {
+    display: flex !important;
   }
 }
