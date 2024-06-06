@@ -26,6 +26,17 @@
     flex-direction: column;
 }
 
+.stack {
+    display: grid;
+    grid-template-areas: "stack";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.stack > * {
+    grid-area: stack;
+}
+
 .container:not(.vertical, .stack) > div {
     display: flex;
     flex-direction: column;
@@ -96,15 +107,6 @@
     width: 100%;
     
     font-size: 1.5rem;
-}
-
-.container.stack {
-    display: grid;
-    grid-template-areas: "stack";
-}
-
-.container.stack > * {
-    grid-area: stack;
 }
 
 @media screen and (max-width: 768px) {
