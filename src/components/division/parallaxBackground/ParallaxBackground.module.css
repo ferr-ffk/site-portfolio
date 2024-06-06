@@ -26,7 +26,7 @@
 .parallax__front {
     position: absolute;
 
-    --size: 50rem;
+    --size:  60rem;
 
     width: var(--size);
     height: var(--size);
@@ -67,6 +67,10 @@
 
     .parallax__back {
         object-fit: none;
+    }
+
+    .parallax__front {
+        --size: 50rem;
     }
 }
 
