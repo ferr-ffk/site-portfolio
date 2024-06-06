@@ -27,6 +27,9 @@ const links = () => {
         <li key="contato">
           <NavbarLink href="#contato">contato</NavbarLink>
         </li>
+        <li key="habilidades">
+          <NavbarLink href="#contato">habilidades</NavbarLink>
+        </li>
         <li key="curriculo">
           <LinkButton href="\cv\curriculum-vitae.pdf" isPdf>
             Currículo
@@ -57,6 +60,9 @@ const links = () => {
             </li>
             <li key="contato">
               <NavbarLink href="#contato" onClick={handleMobileNavbarLinkClick}>contato</NavbarLink>
+            </li>
+            <li key="habilidades">
+              <NavbarLink href="#habilidades" onClick={handleMobileNavbarLinkClick}>habilidades</NavbarLink>
             </li>
             <li key="curriculo">
               <LinkButton href="\cv\curriculum-vitae.pdf" isPdf>
