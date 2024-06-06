@@ -7,7 +7,7 @@ const About = () => {
     <Section id="sobre">
       <div>
         <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" />
-    </div>
+      </div>
       <div>
         <SubHeader>Sobre mim</SubHeader>
         <p>
