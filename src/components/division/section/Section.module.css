@@ -12,6 +12,8 @@
     gap: 2rem;
 
     z-index: 0;
+
+    position: relative;
 }
 
 .container > p {
@@ -29,9 +31,45 @@
 
     gap: 1.5rem;
 
+    min-height: 50rem;
     max-width: 80ch;
 
     flex: 1;
+}
+
+.container > div > div:has(canvas) {
+    height: 80dvh;
+    width: 60dvw;
+}
+
+@media (max-width: 1366px) {
+    .container:has(canvas) {
+        display: grid !important;
+        grid-template-areas: "stack";
+
+        & > * {
+            grid-area: stack;
+        }
+
+        & > :not(div:has(canvas)) {
+            width: 80%;
+            margin-inline: auto;
+        }
+        
+        & div:has(canvas) {
+            transition: none !important;
+            width: 100%;
+        }
+    }
+
+    .container > div > div:has(canvas) {
+        width: 100dvw;
+    }
+}
+
+.container canvas {
+    width: 100%;
+    height: 100%;
 }
 
 .container.hero {
