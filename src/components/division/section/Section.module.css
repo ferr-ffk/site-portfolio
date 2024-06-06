@@ -5,15 +5,17 @@
 
     padding-block: 5rem;
 
+    z-index: 0;
+
+    position: relative;
+}
+
+.container:not(.hero, .stack) {
     display: flex;
     justify-content: center;
     align-items: center;
 
     gap: 2rem;
-
-    z-index: 0;
-
-    position: relative;
 }
 
 .container > p {
@@ -24,7 +26,7 @@
     flex-direction: column;
 }
 
-.container:not(.vertical) > div {
+.container:not(.vertical, .stack) > div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,6 +96,15 @@
     width: 100%;
     
     font-size: 1.5rem;
+}
+
+.container.stack {
+    display: grid;
+    grid-template-areas: "stack";
+}
+
+.container.stack > * {
+    grid-area: stack;
 }
 
 @media screen and (max-width: 768px) {

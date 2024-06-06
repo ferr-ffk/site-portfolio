@@ -4,6 +4,7 @@ import styles from "./Section.module.css";
 interface Props {
   children: React.ReactNode | React.ReactNode[];
   id: string;
+  stack?: boolean;
   vertical?: boolean;
   disableAnimation?: boolean;
   delayIncrease?: number;
@@ -13,6 +14,7 @@ const Section = ({
   children,
   id,
   vertical = false,
+  stack = false,
   disableAnimation,
   delayIncrease = 250,
 }: Props) => {
@@ -25,9 +27,10 @@ const Section = ({
       className={`${styles.container} ${id === "hero" && styles.hero}
                   ${vertical && styles.vertical}
                   ${id == "projetos" && styles.projects}
+                  ${stack && styles.stack}
                 `}
     >
-      {!Array.isArray(children) || disableAnimation ? 
+      {!Array.isArray(children) || disableAnimation || stack ? 
           children
         : children.map((child) => (
             <AnimateOnVisible 
