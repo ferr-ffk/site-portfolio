@@ -1,5 +1,6 @@
 "use client";
 
+import usePrefersReducedMotion from "@/hook/usePrefersReducedMotion";
 import styles from "./InfiniteCarousel.module.css";
 
 interface Props {
@@ -10,8 +11,10 @@ interface Props {
 }
 
 const InfiniteCarousel = ({ children, direction, duration = "fast", className }: Props) => {
+  const prefersReducedMotion = usePrefersReducedMotion();
+
   if (typeof window !== "undefined") {
-    if (!window.matchMedia("(prefers-reduced-motion: reduce").matches) {
+    if (!prefersReducedMotion) {
       addAnimation();
     }
   }
