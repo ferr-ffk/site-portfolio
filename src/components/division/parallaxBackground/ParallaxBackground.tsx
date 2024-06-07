@@ -48,17 +48,21 @@ function handleScroll(this: HTMLElement, ev: Event) {
   const hero =
     document.documentElement.querySelector<HTMLDivElement>("#hero-text")!;
 
+  const backgroundSpeed = -0.2;
+  const foregroundSpeed = 0.3;
+  const heroSpeed = 0.5;
+
   if (background) {
     if (background.style.getPropertyValue("object-fit") !== "none") {
-      background.style.objectPosition = `0 ${scrollTop * -0.2}px`;
+      background.style.objectPosition = `0 ${scrollTop * backgroundSpeed}px`;
     }
   }
 
   if (foreground) {
-    foreground.style.objectPosition = `0 ${scrollTop * 0.3}px`;
+    foreground.style.objectPosition = `0 ${scrollTop * foregroundSpeed}px`;
   }
 
   if (hero) {
-    hero.style.bottom = `${scrollTop * 0.5}px`;
+    hero.style.bottom = `${scrollTop * heroSpeed}px`;
   }
 }
