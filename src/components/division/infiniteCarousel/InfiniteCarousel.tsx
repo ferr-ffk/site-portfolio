@@ -3,7 +3,7 @@
 import styles from "./InfiniteCarousel.module.css";
 
 interface Props {
-  children?: React.ReactNode[];
+  children: React.ReactNode[];
   direction: "left" | "right";
   duration?: "slow" | "fast"
 }
@@ -17,7 +17,10 @@ const InfiniteCarousel = ({ children, direction, duration = "fast" }: Props) => 
 
   return (
     <div className={styles.container} data-direction={direction || "left"} data-duration={duration}>
-      <div className={styles.scroller}>{children}</div>
+      <span className={styles.scroller}>
+        {children}
+        {children}
+      </span>
     </div>
   );
 };
@@ -30,18 +33,4 @@ function addAnimation() {
   );
 
   container?.setAttribute("data-animated", "true");
-
-  const scroller = document.querySelector<HTMLDivElement>(
-    `.${styles.scroller}`
-  );
-
-  const scrollerContent = Array.from(scroller!.children);
-
-  scrollerContent.forEach(item => {
-    const duplicatedItem = item.cloneNode(true) as HTMLDivElement;
-
-    duplicatedItem.setAttribute('aria-hidden', 'true');
-
-    scroller?.appendChild(duplicatedItem)
-  })
 }
