@@ -28,7 +28,7 @@ const links = () => {
           <NavbarLink href="#contato">contato</NavbarLink>
         </li>
         <li key="habilidades">
-          <NavbarLink href="#contato">habilidades</NavbarLink>
+          <NavbarLink href="#habilidades">habilidades</NavbarLink>
         </li>
         <li key="curriculo">
           <LinkButton href="\cv\curriculum-vitae.pdf" isPdf>
