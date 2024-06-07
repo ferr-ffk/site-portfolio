@@ -6,6 +6,7 @@ import skills from "@/model/Skills";
 import styles from "./Skills.module.css";
 import SubHeader from "@/components/text/subHeader/SubHeader";
 import Spline from "@splinetool/react-spline";
+import AnimateOnVisible from "@/components/layout/animateOnVisible/AnimateOnVisible";
 
 const Skills = () => {
   return (
@@ -15,7 +16,9 @@ const Skills = () => {
         {/* <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" /> */}
       </div>
       <div className={styles.content_container}>
-        <SubHeader>Habilidades</SubHeader>
+        <AnimateOnVisible animationType="fadeInLeft">
+          <SubHeader>Habilidades</SubHeader>
+        </AnimateOnVisible>
         <div>
           <InfiniteCarousel direction="right" className={styles.scroller_container}>
             {skills.map(skill => <RandomFont>{skill}</RandomFont>)}
