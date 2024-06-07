@@ -17,6 +17,14 @@
     width: fit-content;
 }
 
+.media_container {
+    position: absolute;
+    left: 12.5%;
+    top: 25%;
+
+    width: 70dvw;
+}
+
 @media (max-width: 1366px) {
     .scroller_container {
         position: absolute;

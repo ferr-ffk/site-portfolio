@@ -5,12 +5,14 @@ import skills from "@/model/Skills";
 
 import styles from "./Skills.module.css";
 import SubHeader from "@/components/text/subHeader/SubHeader";
+import Spline from "@splinetool/react-spline";
 
 const Skills = () => {
   return (
     <Section id="habilidades" stack>
-      <div>
+      <div className={styles.media_container}>
         IMAGE
+        {/* <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" /> */}
       </div>
       <div className={styles.content_container}>
         <SubHeader>Habilidades</SubHeader>
