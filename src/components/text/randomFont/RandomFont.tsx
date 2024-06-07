@@ -1,30 +1,33 @@
 import localFont from "next/font/local";
 import React from "react";
 
-const Integral = localFont({ src: "../../../../public/font/Fontspring-DEMO-integralcf-regular.otf" });
+const Integral = localFont({
+  src: "../../../../public/font/Fontspring-DEMO-integralcf-regular.otf",
+});
 const Manolo = localFont({ src: "../../../../public/font/manolo-mono.ttf" });
-const Auge = localFont({ src: "../../../../public/font/Auge-Trial-Regular.otf" });
+const Auge = localFont({
+  src: "../../../../public/font/Auge-Trial-Regular.otf",
+});
 
 interface Props {
-    children: React.ReactNode | React.ReactNode[];
+  children: React.ReactNode | React.ReactNode[];
+  className?: string;
 }
 
-const RandomFont = ({children}: Props) => {
+const RandomFont = ({ children, className }: Props) => {
   const randomNumber = Math.random();
 
-  let className: string;
+  let randomClassName: string;
 
   if (randomNumber < 0.33) {
-    className = Integral.className;
+    randomClassName = Integral.className;
   } else if (randomNumber < 0.66) {
-    className = Manolo.className;
+    randomClassName = Manolo.className;
   } else {
-    className = Auge.className;
+    randomClassName = Auge.className;
   }
 
-  return (
-    <p className={className}>{children}</p>
-  );
-}
+  return <p className={`${randomClassName} ${className}`}>{children}</p>;
+};
 
 export default RandomFont;
