@@ -6,9 +6,10 @@ interface Props {
   children: React.ReactNode[];
   direction: "left" | "right";
   duration?: "slow" | "fast"
+  className?: string;
 }
 
-const InfiniteCarousel = ({ children, direction, duration = "fast" }: Props) => {
+const InfiniteCarousel = ({ children, direction, duration = "fast", className }: Props) => {
   if (typeof window !== "undefined") {
     if (!window.matchMedia("(prefers-reduced-motion: reduce").matches) {
       addAnimation();
@@ -16,7 +17,7 @@ const InfiniteCarousel = ({ children, direction, duration = "fast" }: Props) => 
   }
 
   return (
-    <div className={styles.container} data-direction={direction || "left"} data-duration={duration}>
+    <div className={`${styles.container} ${className}`} data-direction={direction || "left"} data-duration={duration}>
       <span className={styles.scroller}>
         {children}
         {children}
