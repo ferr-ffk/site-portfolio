@@ -6,8 +6,7 @@ const About = () => {
   return (
     <Section id="sobre">
       <div>
-        <canvas></canvas>
-        {/* <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" /> */}
+        <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" />
       </div>
       <div>
         <SubHeader>Sobre mim</SubHeader>

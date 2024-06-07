@@ -12,8 +12,7 @@ const Skills = () => {
   return (
     <Section id="habilidades" stack>
       <div className={styles.media_container}>
-        IMAGE
-        {/* <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" /> */}
+        <Spline scene="https://prod.spline.design/qhQyuppLnqF4RGmN/scene.splinecode" />
       </div>
       <div className={styles.content_container}>
         <AnimateOnVisible animationType="fadeInLeft">
