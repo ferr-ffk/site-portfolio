@@ -1,3 +1,8 @@
+.container {
+    max-width: 100dvw;
+    width: 1400px;
+}
+
 .scroller {
     padding-block: 1rem;
     
