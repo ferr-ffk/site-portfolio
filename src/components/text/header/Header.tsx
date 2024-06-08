@@ -2,7 +2,7 @@ import styles from "./Header.module.css";
 
 import localFont from "next/font/local";
 
-const Contour_Generator = localFont({ src: "../../../../public/font/CONTOUR-GENERATOR.ttf" });
+const Contour_Generator = localFont({ src: "../../layout/logo/contour-generator.ttf" });
 
 interface Props {
   children: React.ReactNode | React.ReactNode[];
