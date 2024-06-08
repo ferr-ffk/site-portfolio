@@ -33,16 +33,7 @@ const Section = ({
                   ${stack && styles.stack}
                 `}
     >
-      {!Array.isArray(children) || disableAnimation || stack || prefersReducedMotion ? 
-          children
-        : children.map((child) => (
-            <AnimateOnVisible 
-                animationType="fadeInLeft" 
-                delay={(delay += delayIncrease)}
-            >
-            {child} 
-            </AnimateOnVisible>
-      ))}
+      {children}
     </section>
   );
 };
