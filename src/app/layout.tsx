@@ -4,6 +4,7 @@ import { Vesper_Libre } from "next/font/google";
 import Footer from "@/components/layout/footer/Footer";
 import ScrollToTop from "@/components/layout/footer/scrollToTop/ScrollToTop";
 import Navbar from "@/components/layout/navbar/Navbar";
+import { Analytics } from "@vercel/analytics/next";
 
 const vesperLibre = Vesper_Libre({
   weight: ["400", "500", "700", "900"],
@@ -29,6 +30,7 @@ export default function RootLayout({
           <main id="main">{children}</main>
           <Footer />
           <ScrollToTop />
+          <Analytics />
         </div>
       </body>
     </html>
