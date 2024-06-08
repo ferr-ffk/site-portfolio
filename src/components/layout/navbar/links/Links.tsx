@@ -8,7 +8,7 @@ import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import Button from "../../button/Button";
 
-const links = () => {
+const Links = () => {
   const [open, setOpen] = useState(false);
 
   const handleMobileNavbarLinkClick = () => {
@@ -38,7 +38,7 @@ const links = () => {
       </ul>
       <Button
         className={styles.mobile_links_button}
-        onClick={() => setOpen(!open)}
+        onClick={handleMobileNavbarLinkClick}
       >
         <AiOutlineMenu />
       </Button>
@@ -75,4 +75,4 @@ const links = () => {
   );
 };
 
-export default links;
+export default Links;
