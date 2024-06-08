@@ -3,7 +3,11 @@
  * @returns true if the browser is running on reduced motion
  */
 const usePrefersReducedMotion = (): boolean => {
-    return window.matchMedia("(prefers-reduced-motion: reduce").matches;
+    if (typeof window !== "undefined") {
+        return window.matchMedia("(prefers-reduced-motion: reduce").matches;
+    }
+
+    return false;
 }
 
 export default usePrefersReducedMotion;
