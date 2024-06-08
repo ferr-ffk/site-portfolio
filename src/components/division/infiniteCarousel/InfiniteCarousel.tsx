@@ -20,7 +20,7 @@ const InfiniteCarousel = ({ children, direction, duration = "fast", className }:
   }
 
   return (
-    <div className={`${styles.container} ${className}`} data-direction={direction || "left"} data-duration={duration}>
+    <div className={`${styles.container} ${className}`} data-direction={direction || "left"} data-duration={duration} data-animated="true">
       <span className={styles.scroller}>
         {children}
         {children}
