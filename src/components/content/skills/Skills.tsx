@@ -16,13 +16,7 @@ import SplineWrapper from "../spline/SplineWrapper";
 import Spline from "@splinetool/react-spline";
 
 const Skills = () => {
-  const [prefersReducedMotion, setPrefersReducedMotion] = useState(
-    usePrefersReducedMotion()
-  );
-
-  useEffect(() => {
-    setPrefersReducedMotion(usePrefersReducedMotion());
-  }, [window]);
+  let prefersReducedMotion = usePrefersReducedMotion();
 
   return (
     <Section id="habilidades" stack>
