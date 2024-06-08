@@ -1,5 +1,6 @@
 @media (prefers-reduced-motion) {
     .media_container {
+        height: 80dvh;
         width: 80dvw !important;
     
        position: relative;
