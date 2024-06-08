@@ -35,7 +35,7 @@ const Skills = () => {
         </AnimateOnVisible>
         <div>
           <InfiniteCarousel direction="right" className={styles.scroller_container}>
-            {skills.map(skill => <RandomFont>{skill}</RandomFont>)}
+            {skills.map(skill => <RandomFont key={skill}>{skill}</RandomFont>)}
           </InfiniteCarousel>
         </div>
       </div>
