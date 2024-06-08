@@ -38,7 +38,7 @@ const Links = () => {
       </ul>
       <Button
         className={styles.mobile_links_button}
-        onClick={handleMobileNavbarLinkClick}
+        onClick={() => setOpen(!open)}
       >
         <AiOutlineMenu />
       </Button>
