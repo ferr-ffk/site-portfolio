@@ -1,5 +1,6 @@
 "use client";
 
+import usePrefersReducedMotion from "@/hook/usePrefersReducedMotion";
 import styles from "./ParallaxBackground.module.css";
 
 interface Props {
@@ -48,9 +49,17 @@ function handleScroll(this: HTMLElement, ev: Event) {
   const hero =
     document.documentElement.querySelector<HTMLDivElement>("#hero-text")!;
 
-  const backgroundSpeed = -0.2;
-  const foregroundSpeed = 0.3;
-  const heroSpeed = 0.5;
+  let backgroundSpeed = -0.2;
+  let foregroundSpeed = 0.3;
+  let heroSpeed = 0.5;
+
+  const prefersReducedMotion = usePrefersReducedMotion();
+
+  if (prefersReducedMotion) {
+    backgroundSpeed = 0;
+    foregroundSpeed = 0;
+    heroSpeed = 0;
+  }
 
   if (background) {
     if (background.style.getPropertyValue("object-fit") !== "none") {

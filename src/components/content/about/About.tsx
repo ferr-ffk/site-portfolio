@@ -1,12 +1,29 @@
+"use client";
+
 import Section from "@/components/division/section/Section";
 import SubHeader from "@/components/text/subHeader/SubHeader";
+import usePrefersReducedMotion from "@/hook/usePrefersReducedMotion";
 import Spline from "@splinetool/react-spline";
+import Image from "next/image";
+import { useEffect } from "react";
+
+import styles from "./About.module.css";
 
 const About = () => {
+  let prefersReducedMotion = usePrefersReducedMotion();
+
+  useEffect(() => {
+    prefersReducedMotion = usePrefersReducedMotion();
+  }, [window]);
+
   return (
     <Section id="sobre">
-      <div>
-        <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" />
+      <div className={styles.media_container}>
+        {prefersReducedMotion ? (
+          <Image src="/splineFallback/Escorrega@1-2073x1102.png" alt="" fill />
+        ) : (
+          <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" />
+        )}
       </div>
       <div>
         <SubHeader>Sobre mim</SubHeader>

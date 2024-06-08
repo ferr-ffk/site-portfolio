@@ -33,3 +33,9 @@
   transform: translateY(0px);
   filter: blur(0px);
 }
+
+@media (prefers-reduced-motion) {
+  .container {
+    transition: none;
+  }
+}
