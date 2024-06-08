@@ -36,7 +36,7 @@ const SlideShow = ({ children, className }: Props) => {
   useEffect(() => {
     const temp = [...children];
     setOnScreenChildren(temp.splice(currentIndex, 3));
-  }, [currentIndex]);
+  }, [currentIndex, children]);
 
   return (
     <div className={`${styles.container} ${className}`}>

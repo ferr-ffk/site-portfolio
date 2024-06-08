@@ -34,7 +34,7 @@ const AnimateOnVisible = ({ children, delay: stagger, animationType, key }: Prop
         setClassName(hiddenClassName);
       }
     }, stagger);
-  }, [isVisible]);
+  }, [isVisible, animationType, stagger]);
 
   return (
     <div ref={ref} className={`${styles.container} ${className}`} key={key}>
