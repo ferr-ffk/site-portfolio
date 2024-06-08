@@ -38,19 +38,23 @@ const Skills = () => {
         )}
       </div>
       <div className={styles.content_container}>
-        <SubHeader>Habilidades</SubHeader>
+        <AnimateOnVisible animationType="fadeInLeft">
+          <SubHeader>Habilidades</SubHeader>
+        </AnimateOnVisible>
         {prefersReducedMotion ? (
           <SlideShow>
-            {skills.map((skill) => (
-              <RandomFont key={skill}>{skill}</RandomFont>
-            ))}
-          </SlideShow>
+              {skills.map((skill) => (
+                <RandomFont key={skill}>{skill}</RandomFont>
+                ))}
+            </SlideShow>
         ) : (
-          <InfiniteCarousel className={styles.carousel} direction="right">
-            {skills.map((skill) => (
-              <RandomFont key={skill}>{skill}</RandomFont>
-            ))}
-          </InfiniteCarousel>
+          <AnimateOnVisible animationType="fadeInBottom">
+            <InfiniteCarousel className={styles.carousel} direction="right">
+              {skills.map((skill) => (
+                <RandomFont key={skill}>{skill}</RandomFont>
+                ))}
+            </InfiniteCarousel>
+          </AnimateOnVisible>
         )}
       </div>
     </Section>

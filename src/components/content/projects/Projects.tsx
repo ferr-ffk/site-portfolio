@@ -2,6 +2,7 @@ import Section from "@/components/division/section/Section";
 import SubHeader from "@/components/text/subHeader/SubHeader";
 import ProjectsContainer from "./projectsContainer/ProjectsContainer";
 import Project from "@/model/Project";
+import AnimateOnVisible from "@/components/layout/animateOnVisible/AnimateOnVisible";
 
 const Projects = () => {
   const projects: Project[] = [
@@ -34,7 +35,9 @@ const Projects = () => {
 
   return (
     <Section id="projetos" vertical disableAnimation>
-      <SubHeader>Projetos</SubHeader>
+      <AnimateOnVisible animationType="fadeInLeft">
+        <SubHeader>Projetos</SubHeader>
+      </AnimateOnVisible>
       <ProjectsContainer projects={projects} />
     </Section>
   );
