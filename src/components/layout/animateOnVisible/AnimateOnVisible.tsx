@@ -23,7 +23,7 @@ const AnimateOnVisible = ({ children, delay: stagger, animationType, key }: Prop
   if (animationType === "fadeInLeft") {
     hiddenClassName = styles.hiddenFadeInLeft;
   } else if (animationType === "fadeInBottom") {
-    hiddenClassName = styles.fadeInBottom;
+    hiddenClassName = styles.hiddenFadeInBottom;
   }
 
   useEffect(() => {
