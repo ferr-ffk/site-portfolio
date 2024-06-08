@@ -30,7 +30,7 @@ const ParallaxBackground = ({ frontUrl, backUrl, children }: Props) => {
     let foregroundSpeed = 0.3;
     let heroSpeed = 0.5;
   
-    const prefersReducedMotion = usePrefersReducedMotion();
+    const prefersReducedMotion = false;
   
     if (prefersReducedMotion) {
       backgroundSpeed = 0;

@@ -8,15 +8,13 @@ import skills from "@/model/Skills";
 import styles from "./Skills.module.css";
 import SubHeader from "@/components/text/subHeader/SubHeader";
 import AnimateOnVisible from "@/components/layout/animateOnVisible/AnimateOnVisible";
-import usePrefersReducedMotion from "@/hook/usePrefersReducedMotion";
-import { useEffect, useState } from "react";
 import Image from "next/image";
 import SlideShow from "@/components/division/slideShow/SlideShow";
 import SplineWrapper from "../spline/SplineWrapper";
 import Spline from "@splinetool/react-spline";
 
 const Skills = () => {
-  let prefersReducedMotion = usePrefersReducedMotion();
+  let prefersReducedMotion = false;
 
   return (
     <Section id="habilidades" stack>

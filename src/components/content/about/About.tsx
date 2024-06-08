@@ -12,7 +12,7 @@ import SplineWrapper from "../spline/SplineWrapper";
 import Spline from "@splinetool/react-spline";
 
 const About = () => {
-  let prefersReducedMotion = usePrefersReducedMotion();
+  let prefersReducedMotion = false;
 
   return (
     <Section id="sobre">
@@ -25,9 +25,7 @@ const About = () => {
             style={{ zIndex: "-1", objectFit: "contain" }}
           />
         ) : (
-          <SplineWrapper>
-            <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" />
-          </SplineWrapper>
+          <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" />
         )}
       </div>
       <AnimateOnVisible animationType="fadeInLeft">
