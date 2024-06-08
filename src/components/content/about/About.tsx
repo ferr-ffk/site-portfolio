@@ -2,9 +2,7 @@
 
 import Section from "@/components/division/section/Section";
 import SubHeader from "@/components/text/subHeader/SubHeader";
-import usePrefersReducedMotion from "@/hook/usePrefersReducedMotion";
 import Image from "next/image";
-import { useEffect, useState } from "react";
 
 import styles from "./About.module.css";
 import AnimateOnVisible from "@/components/layout/animateOnVisible/AnimateOnVisible";
