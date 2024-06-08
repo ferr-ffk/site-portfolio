@@ -11,9 +11,9 @@ const hero = () => {
       >
         <Header>fernando f. de lira</Header>
         <p>
-          Designer e desenvolvedor front end,
-          desenvolver indie,
-          e cursando informática
+          Designer e desenvolvedor front-end,
+          desenvolvedor indie,
+          estudante em Informática
         </p>
       </ParallaxBackground>
     </Section>
