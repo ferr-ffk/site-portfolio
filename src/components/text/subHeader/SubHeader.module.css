@@ -1,0 +1,18 @@
+.container {
+    position: relative;
+    font-size: 3rem;
+
+    margin-bottom: .625rem;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+
+    background-color: currentColor;
+
+    top: 100%;
+    left: 0;
+    height: .2rem;
+    width: 7.5rem;
+}

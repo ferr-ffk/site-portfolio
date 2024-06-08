@@ -4,7 +4,7 @@ import styles from "./Logo.module.css";
 import Link from "next/link";
 
 const Contour_Generator = localFont({
-  src: "../../../../public/font/CONTOUR-GENERATOR.ttf",
+  src: "./contour-generator.ttf",
 });
 
 const Logo = () => {
