@@ -26,8 +26,8 @@ const ParallaxBackground = ({ frontUrl, backUrl, children }: Props) => {
     const hero =
       document.documentElement.querySelector<HTMLDivElement>("#hero-text")!;
   
-    let backgroundSpeed = -0.2;
-    let foregroundSpeed = 0.3;
+    let backgroundSpeed = 0.1;
+    let foregroundSpeed = 0.4;
     let heroSpeed = 0.5;
   
     const prefersReducedMotion = false;

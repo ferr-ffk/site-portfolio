@@ -16,9 +16,9 @@
 .parallax__back {
     position: absolute;
 
-    object-fit: cover;
+    object-fit: cover !important;
     object-position: 0 0;
-    
+
     height: 100%;
     width: 100%;
 }
