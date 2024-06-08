@@ -1,14 +1,15 @@
-"use client";
+"use client"
 
 import Section from "@/components/division/section/Section";
 import SubHeader from "@/components/text/subHeader/SubHeader";
 import usePrefersReducedMotion from "@/hook/usePrefersReducedMotion";
-import Spline from "@splinetool/react-spline";
 import Image from "next/image";
 import { useEffect } from "react";
 
 import styles from "./About.module.css";
 import AnimateOnVisible from "@/components/layout/animateOnVisible/AnimateOnVisible";
+import SplineWrapper from "../spline/SplineWrapper";
+import Spline from "@splinetool/react-spline";
 
 const About = () => {
   let prefersReducedMotion = usePrefersReducedMotion();
@@ -28,7 +29,9 @@ const About = () => {
             style={{ zIndex: "-1", objectFit: "contain" }}
           />
         ) : (
-          <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" />
+          <SplineWrapper>
+            <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" />
+          </SplineWrapper>
         )}
       </div>
       <AnimateOnVisible animationType="fadeInLeft">

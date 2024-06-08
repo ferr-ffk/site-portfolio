@@ -7,12 +7,13 @@ import skills from "@/model/Skills";
 
 import styles from "./Skills.module.css";
 import SubHeader from "@/components/text/subHeader/SubHeader";
-import Spline from "@splinetool/react-spline";
 import AnimateOnVisible from "@/components/layout/animateOnVisible/AnimateOnVisible";
 import usePrefersReducedMotion from "@/hook/usePrefersReducedMotion";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import SlideShow from "@/components/division/slideShow/SlideShow";
+import SplineWrapper from "../spline/SplineWrapper";
+import Spline from "@splinetool/react-spline";
 
 const Skills = () => {
   const [prefersReducedMotion, setPrefersReducedMotion] = useState(
@@ -34,7 +35,9 @@ const Skills = () => {
             objectFit="contain"
           />
         ) : (
-          <Spline scene="https://prod.spline.design/qhQyuppLnqF4RGmN/scene.splinecode" />
+          <SplineWrapper>
+            <Spline scene="https://prod.spline.design/qhQyuppLnqF4RGmN/scene.splinecode" />
+          </SplineWrapper>
         )}
       </div>
       <div className={styles.content_container}>
@@ -43,9 +46,9 @@ const Skills = () => {
         </AnimateOnVisible>
         {prefersReducedMotion ? (
           <SlideShow>
-              {skills.map((skill) => (
-                <RandomFont key={skill}>{skill}</RandomFont>
-                ))}
+            {skills.map((skill) => (
+              <RandomFont key={skill}>{skill}</RandomFont>
+              ))}
             </SlideShow>
         ) : (
           <AnimateOnVisible animationType="fadeInBottom">
