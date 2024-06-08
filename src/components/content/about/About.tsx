@@ -35,7 +35,7 @@ const About = () => {
         <div className={styles.content_container}>
           <SubHeader>Sobre mim</SubHeader>
           <p>
-            Eu me chamo Fernando. Eu tenho 17 anos e atualmente estou estudando
+            Eu me chamo Fernando. Eu tenho 17 anos e atualmente estudo
             o ensino médio integrado ao técnico em informática no Instituto
             Federal de São Paulo. No meu tempo livre gosto de passar ouvindo
             música e jogando. Eu amo aprender, e estou sempre aprimorando minhas
