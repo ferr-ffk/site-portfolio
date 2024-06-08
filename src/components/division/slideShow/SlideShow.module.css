@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    text-align: center;
+
+    width: 80%;
+    margin-inline: auto;
+
+    font-size: 3.5rem;
+}
+
+.container > * {
+    flex: 1;
+}
+
+.container p {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.arrow_icon {
+    cursor: pointer;
+}
+
+.arrow_icon:hover,
+.arrow_icon:focus-visible {
+    opacity: 0.8;
+}
+
+.arrow_icon:active {
+    opacity: 0.6;
+}
