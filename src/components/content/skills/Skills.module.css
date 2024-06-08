@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 2.5rem;
 
     position: relative;
@@ -23,6 +24,10 @@
 
     height: 60dvh;
     width: 70dvw;
+}
+
+.skills_container {
+    width: 100%;
 }
 
 @media (max-width: 1366px) {

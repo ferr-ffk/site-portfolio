@@ -12,6 +12,7 @@ import AnimateOnVisible from "@/components/layout/animateOnVisible/AnimateOnVisi
 import usePrefersReducedMotion from "@/hook/usePrefersReducedMotion";
 import { useEffect } from "react";
 import Image from "next/image"
+import SlideShow from "@/components/division/slideShow/SlideShow";
 
 const Skills = () => {
   let prefersReducedMotion = usePrefersReducedMotion();
@@ -24,7 +25,7 @@ const Skills = () => {
     <Section id="habilidades" stack>
       <div className={styles.media_container}>
         {prefersReducedMotion ? (
-          <Image src="/splineFallback/Pula Pula@1-2073x1102.png" alt="" fill/>
+          <Image src="/splineFallback/Pula Pula@1-2073x1102.png" alt="" fill objectFit="contain"/>
         ) : (
           <Spline scene="https://prod.spline.design/qhQyuppLnqF4RGmN/scene.splinecode" />
         )}
@@ -33,10 +34,18 @@ const Skills = () => {
         <AnimateOnVisible animationType="fadeInLeft">
           <SubHeader>Habilidades</SubHeader>
         </AnimateOnVisible>
-        <div>
-          <InfiniteCarousel direction="right" className={styles.scroller_container}>
-            {skills.map(skill => <RandomFont key={skill}>{skill}</RandomFont>)}
-          </InfiniteCarousel>
+        <div className={styles.skills_container}>
+            {
+              prefersReducedMotion ? (
+                <SlideShow>
+                  {skills.map(skill => <RandomFont key={skill}>{skill}</RandomFont>)}
+                </SlideShow>
+              ) : (
+                <InfiniteCarousel direction="right" className={styles.scroller_container}>
+                  {skills.map(skill => <RandomFont key={skill}>{skill}</RandomFont>)}
+                </InfiniteCarousel>
+              )
+            }
         </div>
       </div>
     </Section>
