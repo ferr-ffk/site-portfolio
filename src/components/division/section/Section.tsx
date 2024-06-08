@@ -1,5 +1,6 @@
 import AnimateOnVisible from "@/components/layout/animateOnVisible/AnimateOnVisible";
 import styles from "./Section.module.css";
+import usePrefersReducedMotion from "@/hook/usePrefersReducedMotion";
 
 interface Props {
   children: React.ReactNode | React.ReactNode[];
@@ -18,6 +19,8 @@ const Section = ({
   disableAnimation,
   delayIncrease = 250,
 }: Props) => {
+  const prefersReducedMotion = usePrefersReducedMotion();
+
   let delay = 0;
 
   return (
@@ -30,7 +33,7 @@ const Section = ({
                   ${stack && styles.stack}
                 `}
     >
-      {!Array.isArray(children) || disableAnimation || stack ? 
+      {!Array.isArray(children) || disableAnimation || stack || prefersReducedMotion ? 
           children
         : children.map((child) => (
             <AnimateOnVisible 

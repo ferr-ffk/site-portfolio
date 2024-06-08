@@ -18,13 +18,13 @@ const About = () => {
 
   return (
     <Section id="sobre">
-      <div className={styles.media_container}>
         {prefersReducedMotion ? (
-          <Image src="/splineFallback/Escorrega@1-2073x1102.png" alt="" fill />
+          <Image src="/splineFallback/Escorrega@1-2073x1102.png" alt="" fill style={{zIndex: "-1", objectFit: "contain"}}/>
         ) : (
           <Spline scene="https://prod.spline.design/afqunuhRJDW5Ogwc/scene.splinecode" />
         )}
-      </div>
+      {/* <div className={styles.media_container}>
+      </div> */}
       <div>
         <SubHeader>Sobre mim</SubHeader>
         <p>

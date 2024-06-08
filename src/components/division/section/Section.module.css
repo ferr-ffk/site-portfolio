@@ -110,7 +110,22 @@
 }
 
 @media screen and (max-width: 768px) {
-    .container {
+    .container:not(:has(img)) {
         flex-direction: column;
+    }
+
+    .container:has(> img) {
+        display: grid !important;
+        grid-template-areas: "stack";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .container:has(img) > *{
+        grid-area: stack;
+    }
+
+    .container:not(.hero) img {
+        object-fit: contain;
     }
 }
