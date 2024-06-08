@@ -37,9 +37,9 @@ const Section = ({
                 animationType="fadeInLeft" 
                 delay={(delay += delayIncrease)}
             >
-              {child}
+            {child} 
             </AnimateOnVisible>
-          ))}
+      ))}
     </section>
   );
 };
