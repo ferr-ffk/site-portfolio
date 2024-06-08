@@ -1,6 +1,6 @@
 "use client";
 
-import usePrefersReducedMotion from "@/hook/usePrefersReducedMotion";
+import Image from "next/image"
 import styles from "./ParallaxBackground.module.css";
 
 interface Props {
@@ -55,17 +55,19 @@ const ParallaxBackground = ({ frontUrl, backUrl, children }: Props) => {
 
   return (
     <span className={styles.parallax}>
-      <img
+      <Image
         id="parallax-back"
         src={backUrl}
         alt=""
         className={`${styles.parallax__back} unselectable`}
+        fill
       />
-      <img
+      <Image
         id="parallax-front"
         src={frontUrl}
         alt=""
         className={`${styles.parallax__front} unselectable`}
+        fill
       />
       <div id="hero-text" className={`${styles.parallax__hero} unselectable`}>
         {children}

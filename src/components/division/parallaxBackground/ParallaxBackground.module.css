@@ -24,18 +24,20 @@
 }
 
 .parallax__front {
-    position: absolute;
+    position: absolute !important;
 
     --size:  60rem;
 
-    width: var(--size);
-    height: var(--size);
+    width: var(--size) !important;
+    height: var(--size) !important;
 
     object-fit: cover;
     object-position: 0 0;
 
-    bottom: 0;
-    right: 0;
+    left: auto !important;
+    top: auto !important;
+    bottom: 0 !important;
+    right: 0 !important;
 
     filter: brightness(0.85);
 }
