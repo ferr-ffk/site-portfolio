@@ -1,6 +1,12 @@
 .container {
     max-width: 100dvw;
-    width: 1400px;
+    width: 1200px;
+}
+
+@media screen and (max-width: 1366px) {
+    .container {
+        width: 400px;
+    }
 }
 
 .scroller {

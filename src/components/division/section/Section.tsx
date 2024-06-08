@@ -1,6 +1,4 @@
-import AnimateOnVisible from "@/components/layout/animateOnVisible/AnimateOnVisible";
 import styles from "./Section.module.css";
-import usePrefersReducedMotion from "@/hook/usePrefersReducedMotion";
 
 interface Props {
   children: React.ReactNode | React.ReactNode[];
@@ -11,25 +9,15 @@ interface Props {
   delayIncrease?: number;
 }
 
-const Section = ({
-  children,
-  id,
-  vertical = false,
-  stack = false,
-  disableAnimation,
-  delayIncrease = 250,
-}: Props) => {
-  const prefersReducedMotion = usePrefersReducedMotion();
-
-  let delay = 0;
-
+const Section = ({ children, id, vertical = false, stack = false }: Props) => {
   return (
-    <section 
-      id={id} 
-      key={id} 
+    <section
+      id={id}
+      key={id}
       className={`${styles.container} ${id === "hero" && styles.hero}
                   ${vertical && styles.vertical}
                   ${id == "projetos" && styles.projects}
+                  ${id == "habilidades" && styles.skills}
                   ${stack && styles.stack}
                 `}
     >

@@ -64,14 +64,8 @@
             grid-area: stack;
         }
 
-        & > :not(div:has(canvas)) {
-            width: 80%;
-            margin-inline: auto;
-        }
-        
         & div:has(canvas) {
             transition: none !important;
-            width: 100%;
         }
     }
 
@@ -127,5 +121,10 @@
 
     .container:not(.hero) img {
         object-fit: contain;
+    }
+
+    .container.skills {
+        margin: 0;
+        padding: 0 !important;
     }
 }

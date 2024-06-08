@@ -1,50 +1,37 @@
-.scroller_container {
-    width: 80%;
-    font-size: 2.5rem;
-}
-
 .content_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 2.5rem;
+    justify-content: center;
 
-    position: relative;
+    font-size: 5rem;
+
+    width: 100% !important;
 }
 
-.content_container > * {
-    height: fit-content;
-    width: fit-content;
-}
-
-.media_container {
+.media_container:has(canvas) {
     position: absolute;
-    top: 25%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 
-    height: 60dvh;
-    width: 70dvw;
+    margin-block: auto;
+    height: 70%;
+    max-width: 100%;
 }
 
-.skills_container {
-    width: 100%;
-}
+@media screen and (max-width: 768px) {
 
-@media (max-width: 1366px) {
-    .scroller_container,
-    .media_container {
-        position: absolute;
-        top: 50%;
-        left: -25%;
+    .media_container:has(canvas) {
         width: 100dvw !important;
     }
 
-    .scroller_container {
-        margin-block: 2.5rem;
-    }
+    .carousel {
+        position: sticky;
+        top: 50%; 
 
-    .media_container {
-        top: 50%;
-        left: -12.5%;
+        width: 90dvh;
+        margin-inline: auto;
     }
 }
